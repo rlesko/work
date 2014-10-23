@@ -15895,7 +15895,7 @@ void ADC_IRQHandler(void)
         adc_result              = ((NRF_ADC_Type *) 0x40007000UL)->RESULT;
         ((NRF_ADC_Type *) 0x40007000UL)->TASKS_STOP     = 1;
 
-        batt_lvl_in_milli_volts = ((((adc_result) * 1200) / 255) * 5) +
+        batt_lvl_in_milli_volts = ((((adc_result) * 1200) / 255) * 6) +
                                   270;
         percentage_batt_lvl     = battery_level_in_percent(batt_lvl_in_milli_volts);
 

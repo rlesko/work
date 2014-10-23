@@ -4,48 +4,21 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 C:\Users\Ryan\Desktop\sensor\prj\ble_app_template.uvprojx
-Project File Date:  10/22/2014
+Project File Date:  10/23/2014
 
 <h2>Output:</h2>
 Build target 'nrf51822_xxab_s110 (128K)'
-creating preprocessor file for system_nrf51.c...
 creating preprocessor file for main.c...
 compiling main.c...
-..\src\main.c(163): warning:  #177-D: function "service_error_handler" was declared but never referenced
+..\src\main.c(640): warning:  #223-D: function "nrf_delay_ms" declared implicitly
+                nrf_delay_ms(25);
+..\src\main.c(172): warning:  #177-D: function "service_error_handler" was declared but never referenced
   static void service_error_handler(uint32_t nrf_error)
-..\src\main.c: 1 warning, 0 errors
-creating preprocessor file for ble_srv_common.c...
-compiling ble_srv_common.c...
-creating preprocessor file for ble_bas.c...
-compiling ble_bas.c...
-creating preprocessor file for battery.c...
-compiling battery.c...
-creating preprocessor file for ble_error_log.c...
-compiling ble_error_log.c...
-creating preprocessor file for pstorage.c...
-compiling pstorage.c...
-creating preprocessor file for crc16.c...
-compiling crc16.c...
-creating preprocessor file for ble_advdata.c...
-compiling ble_advdata.c...
-creating preprocessor file for app_scheduler.c...
-compiling app_scheduler.c...
-creating preprocessor file for app_timer.c...
-compiling app_timer.c...
-creating preprocessor file for ble_conn_params.c...
-compiling ble_conn_params.c...
-creating preprocessor file for softdevice_handler.c...
-compiling softdevice_handler.c...
-creating preprocessor file for app_button.c...
-compiling app_button.c...
-creating preprocessor file for app_gpiote.c...
-compiling app_gpiote.c...
-creating preprocessor file for ble_debug_assert_handler.c...
-compiling ble_debug_assert_handler.c...
+..\src\main.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=16128 RO-data=228 RW-data=188 ZI-data=5788  
+Program Size: Code=17488 RO-data=228 RW-data=188 ZI-data=5852  
 FromELF: creating hex file...
-".\_build\sensor.axf" - 0 Error(s), 1 Warning(s).
+".\_build\sensor.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -75,3 +48,89 @@ Package Vendor: NordicSemiconductor
       Source file:   Device\Source\arm\arm_startup_nrf51.s
       Source file:   Device\Source\system_nrf51.c
       Include file:  Device\Include\system_nrf51.h
+Load "C:\\Users\\Ryan\\Desktop\\sensor\\prj\\_build\\sensor.axf" 
+Set JLink Project File to "C:\Users\Ryan\Desktop\sensor\prj\JLinkSettings.ini"
+* JLink Info: Device "NRF51822_XXAB" selected (129 KB flash, 16 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.90e, compiled Sep  8 2014 18:46:31
+Firmware: J-Link Ultra V4 compiled Aug 20 2014 09:13:50
+Hardware: V4.00
+S/N : 504301076 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDB 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAB
+VTarget = 2.012V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+ollection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: NordicSemiconductor::Device:Startup:1.0.0
+      Source file:   Device\Source\arm\arm_startup_nrf51.s
+      Source file:   Device\Source\system_nrf51.c
+      Include file:  Device\Include\system_nrf51.h
+Load "C:\\Users\\Ryan\\Desktop\\sensor\\prj\\_build\\sensor.axf" 
+Set JLink Project File to "C:\Users\Ryan\Desktop\sensor\prj\JLinkSettings.ini"
+* JLink Info: Device "NRF51822_XXAB" selected (129 KB flash, 16 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.90e, compiled Sep  8 2014 18:46:31
+Firmware: J-Link Ultra V4 compiled Aug 20 2014 09:13:50
+Hardware: V4.00
+S/N : 504301076 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDB 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAB
+VTarget = 2.012V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+xAB
+VTarget = 2.012V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...

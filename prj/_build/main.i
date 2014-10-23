@@ -24,709 +24,16 @@
 
 
  
+#line 1 "..\\src\\zes.h"
 
-#line 1 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdint.h"
+
  
- 
-
-
-
-
-
  
 
 
 
 
 
-
-
- 
-
-
-
-
-  
- 
-
-
-
-
-
-
-
-#line 37 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdint.h"
-
-
-
-
-
-
-
- 
-
-     
-
-     
-typedef   signed          char int8_t;
-typedef   signed short     int int16_t;
-typedef   signed           int int32_t;
-typedef   signed       __int64 int64_t;
-
-     
-typedef unsigned          char uint8_t;
-typedef unsigned short     int uint16_t;
-typedef unsigned           int uint32_t;
-typedef unsigned       __int64 uint64_t;
-
-     
-
-     
-     
-typedef   signed          char int_least8_t;
-typedef   signed short     int int_least16_t;
-typedef   signed           int int_least32_t;
-typedef   signed       __int64 int_least64_t;
-
-     
-typedef unsigned          char uint_least8_t;
-typedef unsigned short     int uint_least16_t;
-typedef unsigned           int uint_least32_t;
-typedef unsigned       __int64 uint_least64_t;
-
-     
-
-     
-typedef   signed           int int_fast8_t;
-typedef   signed           int int_fast16_t;
-typedef   signed           int int_fast32_t;
-typedef   signed       __int64 int_fast64_t;
-
-     
-typedef unsigned           int uint_fast8_t;
-typedef unsigned           int uint_fast16_t;
-typedef unsigned           int uint_fast32_t;
-typedef unsigned       __int64 uint_fast64_t;
-
-     
-typedef   signed           int intptr_t;
-typedef unsigned           int uintptr_t;
-
-     
-typedef   signed       __int64 intmax_t;
-typedef unsigned       __int64 uintmax_t;
-
-
-
-
-     
-
-     
-
-
-
-
-
-     
-
-
-
-
-
-     
-
-
-
-
-
-     
-
-     
-
-
-
-
-
-     
-
-
-
-
-
-     
-
-
-
-
-
-     
-
-     
-
-
-
-
-
-     
-
-
-
-
-
-     
-
-
-
-
-
-     
-
-     
-
-
-     
-
-
-     
-
-
-     
-
-     
-
-
-     
-
-
-     
-
-
-     
-
-     
-
-
-
-     
-
-
-
-     
-
-
-     
-    
- 
-
-
-
-#line 208 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdint.h"
-
-     
-
-
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-
-#line 272 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdint.h"
-
-
-
- 
-
-
-
-#line 28 "..\\src\\main.c"
-#line 1 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
- 
- 
- 
- 
-
-
-
-
- 
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-#line 38 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
-
-
-  
-  typedef unsigned int size_t;
-
-
-
-
-
-
-
-
-extern __declspec(__nothrow) void *memcpy(void * __restrict  ,
-                    const void * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
- 
-extern __declspec(__nothrow) void *memmove(void *  ,
-                    const void *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) char *strcpy(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
- 
-extern __declspec(__nothrow) char *strncpy(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) char *strcat(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
- 
-extern __declspec(__nothrow) char *strncat(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
- 
-
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) int memcmp(const void *  , const void *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
- 
-extern __declspec(__nothrow) int strcmp(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
- 
-extern __declspec(__nothrow) int strncmp(const char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) int strcasecmp(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
- 
-extern __declspec(__nothrow) int strncasecmp(const char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) int strcoll(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) size_t strxfrm(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(2)));
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-#line 185 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
-extern __declspec(__nothrow) void *memchr(const void *  , int  , size_t  ) __attribute__((__nonnull__(1)));
-
-   
-
-
-
-
-
- 
-
-#line 201 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strchr(const char *  , int  ) __attribute__((__nonnull__(1)));
-
-   
-
-
-
-
- 
-
-extern __declspec(__nothrow) size_t strcspn(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
- 
-
-#line 224 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strpbrk(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-
-   
-
-
-
-
- 
-
-#line 239 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strrchr(const char *  , int  ) __attribute__((__nonnull__(1)));
-
-   
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) size_t strspn(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
- 
-
-#line 262 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strstr(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-
-   
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) char *strtok(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(2)));
-extern __declspec(__nothrow) char *_strtok_r(char *  , const char *  , char **  ) __attribute__((__nonnull__(2,3)));
-
-extern __declspec(__nothrow) char *strtok_r(char *  , const char *  , char **  ) __attribute__((__nonnull__(2,3)));
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) void *memset(void *  , int  , size_t  ) __attribute__((__nonnull__(1)));
-   
-
-
-
- 
-extern __declspec(__nothrow) char *strerror(int  );
-   
-
-
-
-
-
- 
-extern __declspec(__nothrow) size_t strlen(const char *  ) __attribute__((__nonnull__(1)));
-   
-
-
-
- 
-
-extern __declspec(__nothrow) size_t strlcpy(char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) size_t strlcat(char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) void _membitcpybl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpybb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpyhl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpyhb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpywl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpywb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovebl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovebb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovehl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovehb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovewl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovewb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-#line 494 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
-
-
-
- 
-
-#line 29 "..\\src\\main.c"
-#line 1 "..\\lib\\nrf51822\\Include\\nordic_common.h"
-
-
-
-
-
-
-
-
-
-  
-
-
-
- 
-
-
-
-
- 
-
-
-
- 
-
-
- 
-
-
- 
-    
-
- 
-    
-
-
-#line 68 "..\\lib\\nrf51822\\Include\\nordic_common.h"
-
-
-
-
-#line 30 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\nrf.h"
 
 
@@ -978,6 +285,242 @@ typedef enum {
 
 
 #line 145 "C:\\Keil_v5\\ARM\\PACK\\ARM\\CMSIS\\4.1.1\\CMSIS\\Include\\core_cm0.h"
+
+#line 1 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdint.h"
+ 
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+ 
+
+
+
+
+
+
+
+#line 37 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdint.h"
+
+
+
+
+
+
+
+ 
+
+     
+
+     
+typedef   signed          char int8_t;
+typedef   signed short     int int16_t;
+typedef   signed           int int32_t;
+typedef   signed       __int64 int64_t;
+
+     
+typedef unsigned          char uint8_t;
+typedef unsigned short     int uint16_t;
+typedef unsigned           int uint32_t;
+typedef unsigned       __int64 uint64_t;
+
+     
+
+     
+     
+typedef   signed          char int_least8_t;
+typedef   signed short     int int_least16_t;
+typedef   signed           int int_least32_t;
+typedef   signed       __int64 int_least64_t;
+
+     
+typedef unsigned          char uint_least8_t;
+typedef unsigned short     int uint_least16_t;
+typedef unsigned           int uint_least32_t;
+typedef unsigned       __int64 uint_least64_t;
+
+     
+
+     
+typedef   signed           int int_fast8_t;
+typedef   signed           int int_fast16_t;
+typedef   signed           int int_fast32_t;
+typedef   signed       __int64 int_fast64_t;
+
+     
+typedef unsigned           int uint_fast8_t;
+typedef unsigned           int uint_fast16_t;
+typedef unsigned           int uint_fast32_t;
+typedef unsigned       __int64 uint_fast64_t;
+
+     
+typedef   signed           int intptr_t;
+typedef unsigned           int uintptr_t;
+
+     
+typedef   signed       __int64 intmax_t;
+typedef unsigned       __int64 uintmax_t;
+
+
+
+
+     
+
+     
+
+
+
+
+
+     
+
+
+
+
+
+     
+
+
+
+
+
+     
+
+     
+
+
+
+
+
+     
+
+
+
+
+
+     
+
+
+
+
+
+     
+
+     
+
+
+
+
+
+     
+
+
+
+
+
+     
+
+
+
+
+
+     
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+     
+
+
+
+     
+
+
+
+     
+
+
+     
+    
+ 
+
+
+
+#line 208 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdint.h"
+
+     
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+#line 272 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdint.h"
+
+
+
+ 
+
+
 
 #line 147 "C:\\Keil_v5\\ARM\\PACK\\ARM\\CMSIS\\4.1.1\\CMSIS\\Include\\core_cm0.h"
 #line 1 "C:\\Keil_v5\\ARM\\PACK\\ARM\\CMSIS\\4.1.1\\CMSIS\\Include\\core_cmInstr.h"
@@ -9572,7 +9115,675 @@ typedef struct {
 
 
 
+#line 11 "..\\src\\zes.h"
+
+#line 13 "..\\src\\zes.h"
+#line 1 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdbool.h"
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+#line 25 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdbool.h"
+
+
+
+#line 14 "..\\src\\zes.h"
+
+#line 1 "..\\inc\\board.h"
+
+
+ 
+
+
+
+
+#line 1 "..\\inc\\sam_pin.h"
+
+
+ 
+
+
+
+
+#line 24 "..\\inc\\sam_pin.h"
+
+
+#line 38 "..\\inc\\sam_pin.h"
+
+#line 12 "..\\inc\\board.h"
+#line 19 "..\\inc\\board.h"
+
+#line 16 "..\\src\\zes.h"
+#line 1 "..\\src\\zes_res.h"
+
+
+ 
+
+
+
+
+#line 9 "..\\src\\zes_res.h"
+
+ 
+
+
+ 
+enum res_value_t
+{
+	res_Ok = 0, 
+	res_Err = -1, 
+	res_Error = res_Err, 
+
+	res_ESystem = -16384, 
+	res_ERange, 
+	res_EArgument, 
+	res_EOverflow, 
+	res_ETimeout, 
+	res_EFormat, 
+	res_EBusy, 
+	res_ECancel, 
+	res_EFail, 
+	res_EAbort, 
+	res_ERefuse, 
+	res_EReset, 
+	res_EExist, 
+	res_EIo, 
+	res_EData, 
+	res_EMemory, 
+	res_EPermission, 
+	res_EUnknown, 
+};
+
+typedef int16_t res_t; 
+
+
+
+ 
+
+
+
+ 
+int resLog(res_t c, const char *m);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 17 "..\\src\\zes.h"
+#line 1 "..\\src\\zes_def.h"
+
+
+ 
+ 
+
+
+
+#line 1 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+#line 38 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
+
+
+  
+  typedef unsigned int size_t;
+
+
+
+
+
+
+
+
+extern __declspec(__nothrow) void *memcpy(void * __restrict  ,
+                    const void * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+ 
+extern __declspec(__nothrow) void *memmove(void *  ,
+                    const void *  , size_t  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+
+
+
+ 
+extern __declspec(__nothrow) char *strcpy(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+ 
+extern __declspec(__nothrow) char *strncpy(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+
+ 
+
+extern __declspec(__nothrow) char *strcat(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+ 
+extern __declspec(__nothrow) char *strncat(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+extern __declspec(__nothrow) int memcmp(const void *  , const void *  , size_t  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+
+ 
+extern __declspec(__nothrow) int strcmp(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+ 
+extern __declspec(__nothrow) int strncmp(const char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+
+
+ 
+extern __declspec(__nothrow) int strcasecmp(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+
+ 
+extern __declspec(__nothrow) int strncasecmp(const char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+
+
+ 
+extern __declspec(__nothrow) int strcoll(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+
+
+
+ 
+
+extern __declspec(__nothrow) size_t strxfrm(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(2)));
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+#line 185 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
+extern __declspec(__nothrow) void *memchr(const void *  , int  , size_t  ) __attribute__((__nonnull__(1)));
+
+   
+
+
+
+
+
+ 
+
+#line 201 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
+extern __declspec(__nothrow) char *strchr(const char *  , int  ) __attribute__((__nonnull__(1)));
+
+   
+
+
+
+
+ 
+
+extern __declspec(__nothrow) size_t strcspn(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+ 
+
+#line 224 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
+extern __declspec(__nothrow) char *strpbrk(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+
+   
+
+
+
+
+ 
+
+#line 239 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
+extern __declspec(__nothrow) char *strrchr(const char *  , int  ) __attribute__((__nonnull__(1)));
+
+   
+
+
+
+
+
+ 
+
+extern __declspec(__nothrow) size_t strspn(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+ 
+
+#line 262 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
+extern __declspec(__nothrow) char *strstr(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+
+   
+
+
+
+
+
+ 
+
+extern __declspec(__nothrow) char *strtok(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(2)));
+extern __declspec(__nothrow) char *_strtok_r(char *  , const char *  , char **  ) __attribute__((__nonnull__(2,3)));
+
+extern __declspec(__nothrow) char *strtok_r(char *  , const char *  , char **  ) __attribute__((__nonnull__(2,3)));
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+extern __declspec(__nothrow) void *memset(void *  , int  , size_t  ) __attribute__((__nonnull__(1)));
+   
+
+
+
+ 
+extern __declspec(__nothrow) char *strerror(int  );
+   
+
+
+
+
+
+ 
+extern __declspec(__nothrow) size_t strlen(const char *  ) __attribute__((__nonnull__(1)));
+   
+
+
+
+ 
+
+extern __declspec(__nothrow) size_t strlcpy(char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+extern __declspec(__nothrow) size_t strlcat(char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+extern __declspec(__nothrow) void _membitcpybl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern __declspec(__nothrow) void _membitcpybb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern __declspec(__nothrow) void _membitcpyhl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern __declspec(__nothrow) void _membitcpyhb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern __declspec(__nothrow) void _membitcpywl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern __declspec(__nothrow) void _membitcpywb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern __declspec(__nothrow) void _membitmovebl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern __declspec(__nothrow) void _membitmovebb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern __declspec(__nothrow) void _membitmovehl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern __declspec(__nothrow) void _membitmovehb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern __declspec(__nothrow) void _membitmovewl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern __declspec(__nothrow) void _membitmovewb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+#line 494 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\string.h"
+
+
+
+ 
+
+#line 9 "..\\src\\zes_def.h"
+
+
+
+#line 18 "..\\src\\zes.h"
+
+#line 27 "..\\src\\main.c"
+
+
+
+#line 1 "..\\lib\\nrf51822\\Include\\nordic_common.h"
+
+
+
+
+
+
+
+
+
+  
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+ 
+    
+
+ 
+    
+
+
+#line 68 "..\\lib\\nrf51822\\Include\\nordic_common.h"
+
+
+
+
 #line 31 "..\\src\\main.c"
+#line 32 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\app_common\\app_error.h"
 
 
@@ -9599,24 +9810,6 @@ typedef struct {
 
 
 #line 26 "..\\lib\\nrf51822\\Include\\app_common\\app_error.h"
-#line 1 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdbool.h"
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-#line 25 "C:\\Keil_v5\\ARM\\ARMCC\\bin\\..\\include\\stdbool.h"
-
-
-
 #line 27 "..\\lib\\nrf51822\\Include\\app_common\\app_error.h"
 #line 1 "..\\lib\\nrf51822\\Include\\s110\\nrf_error.h"
 
@@ -9688,7 +9881,7 @@ void app_error_handler(uint32_t error_code, uint32_t line_num, const uint8_t * p
 
 
  
-#line 32 "..\\src\\main.c"
+#line 33 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\nrf_gpio.h"
 
 
@@ -10111,8 +10304,8 @@ static __inline void nrf_gpio_port_clear(nrf_gpio_port_select_t port, uint8_t cl
 
  
 
-#line 33 "..\\src\\main.c"
 #line 34 "..\\src\\main.c"
+#line 35 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\s110\\ble.h"
 
 
@@ -12953,7 +13146,7 @@ uint32_t __svc(SD_BLE_OPT_GET) sd_ble_opt_get(uint32_t opt_id, ble_opt_t *p_opt)
 
 
  
-#line 35 "..\\src\\main.c"
+#line 36 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\s110\\ble_hci.h"
 
 
@@ -13051,7 +13244,7 @@ uint32_t __svc(SD_BLE_OPT_GET) sd_ble_opt_get(uint32_t opt_id, ble_opt_t *p_opt)
 
 
  
-#line 36 "..\\src\\main.c"
+#line 37 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\ble\\ble_services\\ble_srv_common.h"
 
 
@@ -13434,7 +13627,7 @@ void ble_srv_ascii_to_utf8(ble_srv_utf8_str_t * p_utf8, char * p_ascii);
 
 
  
-#line 37 "..\\src\\main.c"
+#line 38 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\ble\\ble_advdata.h"
 
 
@@ -13549,7 +13742,7 @@ uint32_t ble_advdata_set(const ble_advdata_t * p_advdata, const ble_advdata_t * 
 
 
  
-#line 38 "..\\src\\main.c"
+#line 39 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\ble\\ble_conn_params.h"
 
 
@@ -13662,7 +13855,7 @@ void ble_conn_params_on_ble_evt(ble_evt_t * p_ble_evt);
 
 
  
-#line 39 "..\\src\\main.c"
+#line 40 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\boards.h"
 
 
@@ -13740,7 +13933,7 @@ void ble_conn_params_on_ble_evt(ble_evt_t * p_ble_evt);
 #line 17 "..\\lib\\nrf51822\\Include\\boards.h"
 #line 26 "..\\lib\\nrf51822\\Include\\boards.h"
 
-#line 40 "..\\src\\main.c"
+#line 41 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\app_common\\app_scheduler.h"
 
 
@@ -13869,7 +14062,7 @@ uint32_t app_sched_event_put(void *                    p_event_data,
 
 
  
-#line 41 "..\\src\\main.c"
+#line 42 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\sd_common\\softdevice_handler.h"
 
 
@@ -16064,7 +16257,7 @@ static __inline uint32_t softdevice_evt_schedule(void)
 
 
  
-#line 42 "..\\src\\main.c"
+#line 43 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\app_common\\app_timer.h"
 
 
@@ -17206,7 +17399,7 @@ static __inline uint32_t app_timer_evt_schedule(app_timer_timeout_handler_t time
 
 
  
-#line 43 "..\\src\\main.c"
+#line 44 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\ble\\ble_error_log.h"
 
 
@@ -17420,7 +17613,7 @@ uint32_t ble_error_log_write(uint32_t err_code, const uint8_t * p_message, uint1
 
 
  
-#line 44 "..\\src\\main.c"
+#line 45 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\app_common\\app_gpiote.h"
 
 
@@ -17635,7 +17828,7 @@ uint32_t app_gpiote_disable_interrupts(void);
 
 
  
-#line 45 "..\\src\\main.c"
+#line 46 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\app_common\\app_button.h"
 
 
@@ -17817,7 +18010,7 @@ static __inline uint32_t app_button_evt_schedule(app_button_handler_t button_han
 
 
  
-#line 46 "..\\src\\main.c"
+#line 47 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\ble\\ble_debug_assert_handler.h"
 
 
@@ -17866,7 +18059,7 @@ static __inline uint32_t app_button_evt_schedule(app_button_handler_t button_han
  
 void ble_debug_assert_handler(uint32_t error_code, uint32_t line_num, const uint8_t * p_file_name);
 
-#line 47 "..\\src\\main.c"
+#line 48 "..\\src\\main.c"
 #line 1 "..\\lib\\nrf51822\\Include\\app_common\\pstorage.h"
 
 
@@ -18212,7 +18405,579 @@ uint32_t pstorage_access_status_get(uint32_t * p_count);
 
 
 
-#line 48 "..\\src\\main.c"
+#line 49 "..\\src\\main.c"
+
+#line 1 "..\\src\\zes_sys.h"
+
+
+ 
+
+
+
+
+#line 9 "..\\src\\zes_sys.h"
+
+ 
+res_t zes_sys_init(void);
+
+ 
+res_t zes_sys_pwld(_Bool c);
+
+#line 51 "..\\src\\main.c"
+#line 52 "..\\src\\main.c"
+#line 1 "..\\src\\zes_spi.h"
+
+
+ 
+
+
+
+
+#line 9 "..\\src\\zes_spi.h"
+#line 1 "..\\src\\zes_bus.h"
+
+
+ 
+
+
+
+
+#line 9 "..\\src\\zes_bus.h"
+#line 10 "..\\src\\zes_bus.h"
+
+#line 12 "..\\src\\zes_bus.h"
+
+enum zes_bus_value_t
+{
+	
+	zes_bus_Twi = 0,
+	zes_bus_Spi,
+
+	
+	zes_bus_Tx = 1<<0, 
+	zes_bus_Rx = 1<<1, 
+	zes_bus_Stop = 1<<2, 
+	zes_bus_Asynch = 1<<3, 
+};
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+typedef struct zes_bus_t zes_bus_t;
+
+ 
+typedef res_t (*zes_bus_init_t)(zes_bus_t *s);
+
+ 
+typedef res_t (*zes_bus_trx_t)(zes_bus_t *s, uint8_t l, const uint8_t *din, uint8_t *dout, uint8_t f);
+
+ 
+typedef void (*zes_bus_handler_t)(zes_bus_t *s);
+
+ 
+struct zes_bus_t
+{
+	void *device; uint8_t type; res_t code; uint8_t speed; uint16_t timeout; uint8_t channel; uintptr_t context; zes_bus_init_t init; zes_bus_trx_t trx; zes_bus_handler_t handler;
+};
+
+#line 10 "..\\src\\zes_spi.h"
+
+ 
+enum zes_spi_value_t
+{
+	
+	zes_spi_125kbps = 0,
+	zes_spi_250kbps,
+	zes_spi_500kbps,
+	zes_spi_1Mbps,
+	zes_spi_2Mbps,
+	zes_spi_4Mbps,
+	zes_spi_8Mbps,
+};
+
+ 
+typedef struct
+{
+	NRF_SPI_Type *device; uint8_t type; res_t code; uint8_t speed; uint16_t timeout; uint8_t channel; uintptr_t context; zes_bus_init_t init; zes_bus_trx_t trx; zes_bus_handler_t handler;
+	uint8_t ssel; 
+	uint8_t mosi; 
+	uint8_t miso; 
+	uint8_t sclk; 
+} zes_spi_t;
+
+ 
+res_t zes_spi_setup(zes_spi_t *s, NRF_SPI_Type *p, uint8_t ss, uint8_t mo, uint8_t mi, uint8_t cl, uint8_t k);
+
+ 
+res_t zes_spi_init(zes_spi_t *s);
+
+ 
+res_t zes_spi_trx(zes_spi_t *s, uint8_t l, const uint8_t *dt, uint8_t *dr, uint8_t f);
+
+#line 53 "..\\src\\main.c"
+#line 1 "..\\src\\zes_lis3dsh.h"
+
+
+ 
+
+
+
+
+#line 9 "..\\src\\zes_lis3dsh.h"
+#line 1 "..\\src\\zes_sns.h"
+
+
+ 
+
+
+
+
+#line 9 "..\\src\\zes_sns.h"
+
+#line 11 "..\\src\\zes_sns.h"
+
+ 
+enum zes_sns_value_t
+{
+	
+	zes_sns_Data = 1<<0,
+};
+
+
+
+
+
+
+
+
+ 
+
+
+typedef struct zes_sns_t zes_sns_t;
+
+ 
+typedef void (*zes_sns_handler_t)(zes_sns_t *s);
+
+ 
+struct zes_sns_t
+{
+	volatile uint8_t state; volatile res_t code; zes_bus_t *bus; zes_sns_handler_t handler; uint32_t last; uint8_t address;
+};
+
+ 
+res_t zes_sns_setup(zes_sns_t *s, zes_bus_t *b, zes_sns_handler_t h);
+
+ 
+res_t zes_sns_read(zes_sns_t *s, uint8_t a, uint8_t l, uint8_t *b);
+
+ 
+res_t zes_sns_write(zes_sns_t *s, uint8_t a, uint8_t l, const uint8_t *b);
+
+#line 10 "..\\src\\zes_lis3dsh.h"
+#line 1 "..\\inc\\lis3dsh.h"
+
+
+
+
+ 
+
+
+
+
+#line 11 "..\\inc\\lis3dsh.h"
+
+ 
+
+
+
+
+
+
+#line 27 "..\\inc\\lis3dsh.h"
+
+#line 38 "..\\inc\\lis3dsh.h"
+
+
+
+
+
+
+
+#line 51 "..\\inc\\lis3dsh.h"
+
+
+
+
+#line 74 "..\\inc\\lis3dsh.h"
+
+#line 95 "..\\inc\\lis3dsh.h"
+
+ 
+enum Lis3dshInf1Value
+{
+	lis3dsh_INF1_Val = 0x21
+};
+
+ 
+enum Lis3dshInf2Value
+{
+	lis3dsh_INF2_Val = 0x00
+};
+
+ 
+enum Lis3dshIdValue
+{
+	lis3dsh_ID_Val = 0x3f
+};
+
+ 
+enum Lis3dshCtl3Value
+{
+	lis3dsh_STRT_Pos = 0, 
+	lis3dsh_STRT_Len = 1,
+	lis3dsh_STRT_Off = 0,
+	lis3dsh_STRT_On,
+
+	lis3dsh_VFLT_Pos = 2, 
+	lis3dsh_VFLT_Len = 1,
+	lis3dsh_VFLT_Off = 0,
+	lis3dsh_VFLT_On,
+
+	lis3dsh_INT1EN_Pos = 3, 
+	lis3dsh_INT1EN_Len = 1,
+	lis3dsh_INT1EN_Off = 0,
+	lis3dsh_INT1EN_On,
+
+	lis3dsh_INT2EN_Pos = 4, 
+	lis3dsh_INT2EN_Len = 1,
+	lis3dsh_INT2EN_Off = 0,
+	lis3dsh_INT2EN_On,
+
+	lis3dsh_IEL_Pos = 5, 
+	lis3dsh_IEL_Len = 1,
+	lis3dsh_IEL_On = 0,
+	lis3dsh_IEL_Off,
+
+	lis3dsh_IEA_Pos = 6, 
+	lis3dsh_IEA_Len = 1,
+	lis3dsh_IEA_Low = 0,
+	lis3dsh_IEA_High,
+
+	lis3dsh_DRDE_Pos = 7, 
+	lis3dsh_DRDE_Len = 1,
+	lis3dsh_DRDE_Off = 0,
+	lis3dsh_DRDE_On,
+};
+
+ 
+enum Lis3dshCtl4Value
+{
+	lis3dsh_XEN_Pos = 0, 
+	lis3dsh_XEN_Len = 1,
+	lis3dsh_XEN_Off = 0,
+	lis3dsh_XEN_On,
+
+	lis3dsh_YEN_Pos = 1, 
+	lis3dsh_YEN_Len = 1,
+	lis3dsh_YEN_Off = 0,
+	lis3dsh_YEN_On,
+
+	lis3dsh_ZEN_Pos = 2, 
+	lis3dsh_ZEN_Len = 1,
+	lis3dsh_ZEN_Off = 0,
+	lis3dsh_ZEN_On,
+
+	lis3dsh_BDU_Pos = 3, 
+	lis3dsh_BDU_Len = 1,
+	lis3dsh_BDU_Off = 0,
+	lis3dsh_BDU_On,
+
+	lis3dsh_ODR_Pos = 4, 
+	lis3dsh_ODR_Len = 5,
+	lis3dsh_ODR_Off = 0, 
+	lis3dsh_ODR_3_125Hz,
+	lis3dsh_ODR_6_25Hz,
+	lis3dsh_ODR_12_5Hz,
+	lis3dsh_ODR_25Hz,
+	lis3dsh_ODR_50Hz,
+	lis3dsh_ODR_100Hz,
+	lis3dsh_ODR_400Hz,
+	lis3dsh_ODR_800Hz,
+	lis3dsh_ODR_1600Hz,
+};
+
+ 
+enum Lis3dshCtl5Value
+{
+	lis3dsh_SIM_Pos = 0, 
+	lis3dsh_SIM_Len = 1,
+	lis3dsh_SIM_4Wire = 0,
+	lis3dsh_SIM_3Wire,
+
+	lis3dsh_ST_Pos = 1, 
+	lis3dsh_ST_Len = 2,
+	lis3dsh_ST_Off = 0, 
+	lis3dsh_ST_Positive, 
+	lis3dsh_ST_Negative, 
+
+	lis3dsh_FS_Pos = 3, 
+	lis3dsh_FS_Len = 3,
+	lis3dsh_FS_2 = 0, 
+	lis3dsh_FS_4,
+	lis3dsh_FS_6,
+	lis3dsh_FS_8,
+	lis3dsh_FS_16,
+
+	lis3dsh_BW_Pos = 6, 
+	lis3dsh_BW_Len = 2,
+	lis3dsh_BW_800Hz = 0,
+	lis3dsh_BW_400Hz,
+	lis3dsh_BW_200Hz,
+	lis3dsh_BW_50Hz,
+};
+
+ 
+enum Lis3dshCtl6Value
+{
+	lis3dsh_P2BOOT_Pos = 0, 
+	lis3dsh_P2BOOT_Len = 1,
+	lis3dsh_P2BOOT_Off = 0,
+	lis3dsh_P2BOOT_On,
+
+	lis3dsh_P1OVR_Pos = 1, 
+	lis3dsh_P1OVR_Len = 1,
+	lis3dsh_P1OVR_Off = 0,
+	lis3dsh_P1OVR_On,
+
+	lis3dsh_P1WTM_Pos = 2, 
+	lis3dsh_P1WTM_Len = 1,
+	lis3dsh_P1WTM_Off = 0,
+	lis3dsh_P1WTM_On,
+
+	lis3dsh_P1EMP_Pos = 3, 
+	lis3dsh_P1EMP_Len = 1,
+	lis3dsh_P1EMP_Off = 0,
+	lis3dsh_P1EMP_On,
+
+	lis3dsh_ADDI_Pos = 4, 
+	lis3dsh_ADDI_Len = 1,
+	lis3dsh_ADDI_Off = 0,
+	lis3dsh_ADDI_On,
+
+	lis3dsh_WTME_Pos = 5, 
+	lis3dsh_WTME_Len = 1,
+	lis3dsh_WTME_Off = 0,
+	lis3dsh_WTME_On,
+
+	lis3dsh_FEN_Pos = 6, 
+	lis3dsh_FEN_Len = 1,
+	lis3dsh_FEN_Off = 0,
+	lis3dsh_FEN_On,
+
+	lis3dsh_BOOT_Pos = 7, 
+	lis3dsh_BOOT_Len = 1,
+	lis3dsh_BOOT_Off = 0,
+	lis3dsh_BOOT_On,
+};
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+enum Lis3dshIcfgValue
+{
+	lis3dsh_IEN_Pos = 0, 
+	lis3dsh_IEN_Len = 1,
+	lis3dsh_IEN_Off = 0,
+	lis3dsh_IEN_On,
+
+	lis3dsh_LIR_Pos = 1, 
+	lis3dsh_LIR_Len = 1,
+	lis3dsh_LIR_On = 0, 
+	lis3dsh_LIR_Off,
+
+
+
+
+
+
+	lis3dsh_ZIEN_Pos = 5, 
+	lis3dsh_ZIEN_Len = 1,
+	lis3dsh_ZIEN_Off = 0,
+	lis3dsh_ZIEN_On,
+
+	lis3dsh_YIEN_Pos = 6, 
+	lis3dsh_YIEN_Len = 1,
+	lis3dsh_YIEN_Off = 0,
+	lis3dsh_YIEN_On,
+
+	lis3dsh_XIEN_Pos = 7, 
+	lis3dsh_XIEN_Len = 1,
+	lis3dsh_XIEN_Off = 0,
+	lis3dsh_XIEN_On,
+
+};
+
+ 
+enum Lis3dshIsrcValue
+{
+	lis3dsh_IA_Pos = 0, 
+	lis3dsh_IA_Len = 1,
+	lis3dsh_IA_Off = 0,
+	lis3dsh_IA_On,
+
+	lis3dsh_MROI_Pos = 1, 
+	lis3dsh_MROI_Len = 1,
+	lis3dsh_MROI_Off = 0,
+	lis3dsh_MROI_On,
+
+	lis3dsh_ZNTH_Pos = 2, 
+	lis3dsh_ZNTH_Len = 1,
+	lis3dsh_ZNTH_Off = 0,
+	lis3dsh_ZNTH_On,
+
+	lis3dsh_YNTH_Pos = 3, 
+	lis3dsh_YNTH_Len = 1,
+	lis3dsh_YNTH_Off = 0,
+	lis3dsh_YNTH_On,
+
+	lis3dsh_XNTH_Pos = 4, 
+	lis3dsh_XNTH_Len = 1,
+	lis3dsh_XNTH_Off = 0,
+	lis3dsh_XNTH_On,
+
+	lis3dsh_ZPTH_Pos = 5, 
+	lis3dsh_ZPTH_Len = 1,
+	lis3dsh_ZPTH_Off = 0,
+	lis3dsh_ZPTH_On,
+
+	lis3dsh_YPTH_Pos = 6, 
+	lis3dsh_YPTH_Len = 1,
+	lis3dsh_YPTH_Off = 0,
+	lis3dsh_YPTH_On,
+
+	lis3dsh_XPTH_Pos = 7, 
+	lis3dsh_XPTH_Len = 1,
+	lis3dsh_XPTH_Off = 0,
+	lis3dsh_XPTH_On,
+};
+
+ 
+
+
+
+
+#line 11 "..\\src\\zes_lis3dsh.h"
+
+ 
+typedef struct
+{
+	float x_G; 
+	float y_G; 
+	float z_G; 
+} zes_lis3dsh_d;
+
+ 
+typedef struct
+{
+	volatile uint8_t state; volatile res_t code; zes_bus_t *bus; zes_sns_handler_t handler; uint32_t last; uint8_t address;
+	zes_lis3dsh_d data;
+} zes_lis3dsh_t;
+
+ 
+res_t zes_lis3dsh_setup(zes_lis3dsh_t *s, zes_bus_t *b);
+
+ 
+res_t zes_lis3dsh_init(zes_lis3dsh_t *s);
+
+ 
+res_t zes_lis3dsh_data(zes_lis3dsh_t *s, zes_lis3dsh_d *d);
+
+ 
+void zes_lis3dsh_handler(zes_lis3dsh_t *s);
+
+#line 54 "..\\src\\main.c"
 
 #line 1 "..\\lib\\nrf51822\\Include\\ble\\ble_services\\ble_bas.h"
 
@@ -18348,7 +19113,7 @@ uint32_t ble_bas_battery_level_update(ble_bas_t * p_bas, uint8_t battery_level);
 
 
  
-#line 50 "..\\src\\main.c"
+#line 56 "..\\src\\main.c"
 #line 1 "..\\src\\battery.h"
 
 
@@ -18385,7 +19150,7 @@ void battery_start(void);
 
  
  
-#line 51 "..\\src\\main.c"
+#line 57 "..\\src\\main.c"
 
 
 
@@ -18409,13 +19174,13 @@ void battery_start(void);
 
 
 
-#line 81 "..\\src\\main.c"
+#line 87 "..\\src\\main.c"
 
 
 
 
 
-#line 93 "..\\src\\main.c"
+#line 99 "..\\src\\main.c"
 
 
 
@@ -18423,6 +19188,9 @@ static ble_gap_sec_params_t             m_sec_params;
 static uint16_t                         m_conn_handle = 0xFFFF;     
 ble_bas_t                               bas;
 static app_timer_id_t                   m_battery_timer_id;
+static zes_spi_t                        zes_Spi0;
+static zes_lis3dsh_t                    zes_Lis3dsh;
+
 
 
 
@@ -18488,7 +19256,7 @@ void assert_nrf_callback(uint16_t line_num, const uint8_t * p_file_name)
  
 static void service_error_handler(uint32_t nrf_error)
 {
-    do { app_error_handler((nrf_error), 165, (uint8_t*) "..\\src\\main.c"); } while (0);
+    do { app_error_handler((nrf_error), 174, (uint8_t*) "..\\src\\main.c"); } while (0);
 } 
 
 
@@ -18520,14 +19288,14 @@ static void timers_init(void)
 {
 	  uint32_t err_code;
     
-    do { static uint32_t APP_TIMER_BUF[((((( (((3)) * 40) + ( 3 * (8 + (((4) + 1) + 1) * 24) ) )) - 1) / (sizeof(uint32_t))) + 1)]; uint32_t ERR_CODE = app_timer_init((0), (3), (4) + 1, APP_TIMER_BUF, (1) ? app_timer_evt_schedule : 0); do { const uint32_t LOCAL_ERR_CODE = (ERR_CODE); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 197, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); } while (0);
+    do { static uint32_t APP_TIMER_BUF[((((( (((3)) * 40) + ( 3 * (8 + (((4) + 1) + 1) * 24) ) )) - 1) / (sizeof(uint32_t))) + 1)]; uint32_t ERR_CODE = app_timer_init((0), (3), (4) + 1, APP_TIMER_BUF, (1) ? app_timer_evt_schedule : 0); do { const uint32_t LOCAL_ERR_CODE = (ERR_CODE); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 206, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); } while (0);
 
     
 
 
  
     err_code = app_timer_create(&m_battery_timer_id, APP_TIMER_MODE_REPEATED, battery_level_meas_timeout_handler);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 204, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); 
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 213, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); 
 }
 
 
@@ -18547,11 +19315,11 @@ static void gap_params_init(void)
     err_code = sd_ble_gap_device_name_set(&sec_mode,
                                           (const uint8_t *)"Zendo_Sensor",
                                           strlen("Zendo_Sensor"));
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 224, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 233, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
 
      
     err_code = sd_ble_gap_appearance_set(768);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 228, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); 
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 237, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); 
 
     memset(&gap_conn_params, 0, sizeof(gap_conn_params));
 
@@ -18561,7 +19329,7 @@ static void gap_params_init(void)
     gap_conn_params.conn_sup_timeout  = (((4000) * 1000) / (UNIT_10_MS));
 
     err_code = sd_ble_gap_ppcp_set(&gap_conn_params);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 238, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 247, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
 }
 
 
@@ -18590,7 +19358,7 @@ static void advertising_init(void)
     advdata.uuids_complete.p_uuids  = adv_uuids;
 
     err_code = ble_advdata_set(&advdata, 0);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 267, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 276, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
 }
 
 
@@ -18616,7 +19384,7 @@ static void services_init(void)
     bas_init.initial_batt_level   = 100;
 	
 	  err_code = ble_bas_init(&bas, &bas_init);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 293, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 302, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
 }
 
 
@@ -18650,7 +19418,7 @@ static void on_conn_params_evt(ble_conn_params_evt_t * p_evt)
     if(p_evt->evt_type == BLE_CONN_PARAMS_EVT_FAILED)
     {
         err_code = sd_ble_gap_disconnect(m_conn_handle, 0x3B);
-        do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 327, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+        do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 336, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
     }
 }
 
@@ -18661,7 +19429,7 @@ static void on_conn_params_evt(ble_conn_params_evt_t * p_evt)
  
 static void conn_params_error_handler(uint32_t nrf_error)
 {
-    do { app_error_handler((nrf_error), 338, (uint8_t*) "..\\src\\main.c"); } while (0);
+    do { app_error_handler((nrf_error), 347, (uint8_t*) "..\\src\\main.c"); } while (0);
 }
 
 
@@ -18684,7 +19452,7 @@ static void conn_params_init(void)
     cp_init.error_handler                  = conn_params_error_handler;
 
     err_code = ble_conn_params_init(&cp_init);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 361, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 370, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
 }
 
 
@@ -18696,7 +19464,7 @@ static void timers_start(void)
     uint32_t err_code;
 
     err_code = app_timer_start(m_battery_timer_id, ((uint32_t)((((2000) * (uint64_t)32768) + ((((0) + 1) * 1000) / 2)) / (((0) + 1) * 1000))), 0);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 373, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 382, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
 }
 
 
@@ -18717,7 +19485,7 @@ static void advertising_start(void)
     adv_params.timeout     = 180;
 
     err_code = sd_ble_gap_adv_start(&adv_params);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 394, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 403, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
     nrf_gpio_pin_set(8);
 }
 
@@ -18768,12 +19536,12 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
             err_code = sd_ble_gap_sec_params_reply(m_conn_handle,
                                                    0x00,
                                                    &m_sec_params);
-            do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 445, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+            do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 454, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
             break;
 
         case BLE_GATTS_EVT_SYS_ATTR_MISSING:
             err_code = sd_ble_gatts_sys_attr_set(m_conn_handle, 0, 0);
-            do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 450, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+            do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 459, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
             break;
 
         case BLE_GAP_EVT_AUTH_STATUS:
@@ -18785,13 +19553,13 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
             if (p_enc_info->div == p_ble_evt->evt.gap_evt.params.sec_info_request.div)
             {
                 err_code = sd_ble_gap_sec_info_reply(m_conn_handle, p_enc_info, 0);
-                do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 462, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+                do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 471, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
             }
             else
             {
                 
                 err_code = sd_ble_gap_sec_info_reply(m_conn_handle, 0, 0);
-                do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 468, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+                do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 477, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
             }
             break;
 
@@ -18807,7 +19575,7 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
                 
                 
                 err_code = sd_power_system_off();
-                do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 484, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+                do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 493, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
             }
             break;
 
@@ -18857,22 +19625,22 @@ static void ble_stack_init(void)
     uint32_t err_code;
 
     
-    do { static uint32_t EVT_BUFFER[(((((((((sizeof(ble_evt_t) + (23))) < (0) ? (0) : ((sizeof(ble_evt_t) + (23))))) < (sizeof(uint32_t)) ? (sizeof(uint32_t)) : ((((sizeof(ble_evt_t) + (23))) < (0) ? (0) : ((sizeof(ble_evt_t) + (23))))))) - 1) / (sizeof(uint32_t))) + 1)]; uint32_t ERR_CODE; ERR_CODE = softdevice_handler_init((NRF_CLOCK_LFCLKSRC_XTAL_20_PPM), EVT_BUFFER, sizeof(EVT_BUFFER), (0) ? softdevice_evt_schedule : 0); do { const uint32_t LOCAL_ERR_CODE = (ERR_CODE); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 534, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); } while (0);
+    do { static uint32_t EVT_BUFFER[(((((((((sizeof(ble_evt_t) + (23))) < (0) ? (0) : ((sizeof(ble_evt_t) + (23))))) < (sizeof(uint32_t)) ? (sizeof(uint32_t)) : ((((sizeof(ble_evt_t) + (23))) < (0) ? (0) : ((sizeof(ble_evt_t) + (23))))))) - 1) / (sizeof(uint32_t))) + 1)]; uint32_t ERR_CODE; ERR_CODE = softdevice_handler_init((NRF_CLOCK_LFCLKSRC_XTAL_20_PPM), EVT_BUFFER, sizeof(EVT_BUFFER), (0) ? softdevice_evt_schedule : 0); do { const uint32_t LOCAL_ERR_CODE = (ERR_CODE); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 543, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); } while (0);
 
     
     ble_enable_params_t ble_enable_params;
     memset(&ble_enable_params, 0, sizeof(ble_enable_params));
     ble_enable_params.gatts_enable_params.service_changed = 0;
     err_code = sd_ble_enable(&ble_enable_params);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 541, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 550, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
 
     
     err_code = softdevice_ble_evt_handler_set(ble_evt_dispatch);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 545, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 554, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
     
     
     err_code = softdevice_sys_evt_handler_set(sys_evt_dispatch);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 549, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 558, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
 }
 
 
@@ -18880,7 +19648,7 @@ static void ble_stack_init(void)
  
 static void scheduler_init(void)
 {
-    do { static uint32_t APP_SCHED_BUF[((((((((sizeof(app_timer_event_t))) + 8) * (((10)) + 1))) - 1) / (sizeof(uint32_t))) + 1)]; uint32_t ERR_CODE = app_sched_init((sizeof(app_timer_event_t)), (10), APP_SCHED_BUF); do { const uint32_t LOCAL_ERR_CODE = (ERR_CODE); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 557, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); } while (0);
+    do { static uint32_t APP_SCHED_BUF[((((((((sizeof(app_timer_event_t))) + 8) * (((10)) + 1))) - 1) / (sizeof(uint32_t))) + 1)]; uint32_t ERR_CODE = app_sched_init((sizeof(app_timer_event_t)), (10), APP_SCHED_BUF); do { const uint32_t LOCAL_ERR_CODE = (ERR_CODE); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 566, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); } while (0);
 }
 
 
@@ -18913,7 +19681,7 @@ static void scheduler_init(void)
  
 static void gpiote_init(void)
 {
-    do { static uint32_t app_gpiote_buf[((((((1) * 20)) - 1) / (sizeof(uint32_t))) + 1)]; uint32_t ERR_CODE = app_gpiote_init((1), app_gpiote_buf); do { const uint32_t LOCAL_ERR_CODE = (ERR_CODE); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 590, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); } while (0);
+    do { static uint32_t app_gpiote_buf[((((((1) * 20)) - 1) / (sizeof(uint32_t))) + 1)]; uint32_t ERR_CODE = app_gpiote_init((1), app_gpiote_buf); do { const uint32_t LOCAL_ERR_CODE = (ERR_CODE); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 599, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); } while (0);
 }
 
 
@@ -18930,7 +19698,7 @@ static void buttons_init(void)
         
     };
 
-    do { uint32_t ERR_CODE = app_button_init((buttons), (sizeof(buttons) / sizeof(buttons[0])), (((uint32_t)((((50) * (uint64_t)32768) + ((((0) + 1) * 1000) / 2)) / (((0) + 1) * 1000)))), (1) ? app_button_evt_schedule : 0); do { const uint32_t LOCAL_ERR_CODE = (ERR_CODE); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 607, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); } while (0);
+    do { uint32_t ERR_CODE = app_button_init((buttons), (sizeof(buttons) / sizeof(buttons[0])), (((uint32_t)((((50) * (uint64_t)32768) + ((((0) + 1) * 1000) / 2)) / (((0) + 1) * 1000)))), (1) ? app_button_evt_schedule : 0); do { const uint32_t LOCAL_ERR_CODE = (ERR_CODE); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 616, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0); } while (0);
 
     
     
@@ -18943,7 +19711,7 @@ static void buttons_init(void)
 static void power_manage(void)
 {
     uint32_t err_code = sd_app_evt_wait();
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 620, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 629, (uint8_t*) "..\\src\\main.c"); } while (0); } } while (0);
 }
 
 
@@ -18951,6 +19719,17 @@ static void power_manage(void)
  
 int main(void)
 {
+	  zes_sys_init();
+	
+	  zes_sys_pwld(1);
+		nrf_delay_ms(25);
+	
+		zes_spi_setup(&zes_Spi0, ((NRF_SPI_Type *) 0x40003000UL), 30, 28, 29, 25, zes_spi_125kbps);
+	  zes_spi_init(&zes_Spi0);
+
+	  zes_lis3dsh_setup(&zes_Lis3dsh, (zes_bus_t *)&zes_Spi0);
+	  zes_lis3dsh_init(&zes_Lis3dsh);	
+	
     
     leds_init();
     timers_init();

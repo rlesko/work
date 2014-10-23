@@ -23,28 +23,34 @@
  * It can easily be used as a starting point for creating a new application, the comments identified
  * with 'YOUR_JOB' indicates where and how you can customize.
  */
+#include "zes.h"
 
-#include <stdint.h>
-#include <string.h>
-#include "nordic_common.h"
-#include "nrf.h"
-#include "app_error.h"
-#include "nrf_gpio.h"
-#include "nrf51_bitfields.h"
-#include "ble.h"
-#include "ble_hci.h"
-#include "ble_srv_common.h"
-#include "ble_advdata.h"
-#include "ble_conn_params.h"
-#include "boards.h"
-#include "app_scheduler.h"
-#include "softdevice_handler.h"
-#include "app_timer.h"
-#include "ble_error_log.h"
-#include "app_gpiote.h"
-#include "app_button.h"
-#include "ble_debug_assert_handler.h"
-#include "pstorage.h"
+//#include <stdint.h>
+//#include <string.h>
+#include <nordic_common.h>
+#include <nrf.h>
+#include <app_error.h>
+#include <nrf_gpio.h>
+#include <nrf51_bitfields.h>
+#include <ble.h>
+#include <ble_hci.h>
+#include <ble_srv_common.h>
+#include <ble_advdata.h>
+#include <ble_conn_params.h>
+#include <boards.h>
+#include <app_scheduler.h>
+#include <softdevice_handler.h>
+#include <app_timer.h>
+#include <ble_error_log.h>
+#include <app_gpiote.h>
+#include <app_button.h>
+#include <ble_debug_assert_handler.h>
+#include <pstorage.h>
+
+#include "zes_sys.h"
+#include "sam_pin.h"
+#include "zes_spi.h"
+#include "zes_lis3dsh.h"
 
 #include "ble_bas.h"
 #include "battery.h"
@@ -97,6 +103,9 @@ static ble_gap_sec_params_t             m_sec_params;                           
 static uint16_t                         m_conn_handle = BLE_CONN_HANDLE_INVALID;    /**< Handle of the current connection. */
 ble_bas_t                               bas;
 static app_timer_id_t                   m_battery_timer_id;
+static zes_spi_t                        zes_Spi0;
+static zes_lis3dsh_t                    zes_Lis3dsh;
+
 
 // YOUR_JOB: Modify these according to requirements (e.g. if other event types are to pass through
 //           the scheduler).
@@ -625,6 +634,17 @@ static void power_manage(void)
  */
 int main(void)
 {
+	  zes_sys_init();
+	
+	  zes_sys_pwld(true);
+		nrf_delay_ms(25);
+	
+		zes_spi_setup(&zes_Spi0, NRF_SPI0, AS_nCS, AS_MOSI, AS_MISO, AS_SCLK, zes_spi_125kbps);
+	  zes_spi_init(&zes_Spi0);
+
+	  zes_lis3dsh_setup(&zes_Lis3dsh, (zes_bus_t *)&zes_Spi0);
+	  zes_lis3dsh_init(&zes_Lis3dsh);	
+	
     // Initialize
     leds_init();
     timers_init();

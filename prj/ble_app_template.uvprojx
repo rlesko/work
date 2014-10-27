@@ -519,6 +519,31 @@
               <FileType>1</FileType>
               <FilePath>.\..\src\main.c</FilePath>
             </File>
+            <File>
+              <FileName>zes_sns.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\src\zes_sns.h</FilePath>
+            </File>
+            <File>
+              <FileName>zes_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\zes_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>zes_sns.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\zes_sns.c</FilePath>
+            </File>
+            <File>
+              <FileName>zes_sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\zes_sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>zes_sys.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\src\zes_sys.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -538,6 +563,11 @@
               <FileName>battery.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\battery.c</FilePath>
+            </File>
+            <File>
+              <FileName>ble_sam.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\ble_sam.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -598,6 +628,11 @@
               <FileName>ble_debug_assert_handler.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\..\lib\nrf51822\Source\ble\ble_debug_assert_handler.c</FilePath>
+            </File>
+            <File>
+              <FileName>nrf_delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib\nrf51822\Source\nrf_delay\nrf_delay.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1134,6 +1169,31 @@
               <FileType>1</FileType>
               <FilePath>.\..\src\main.c</FilePath>
             </File>
+            <File>
+              <FileName>zes_sns.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\src\zes_sns.h</FilePath>
+            </File>
+            <File>
+              <FileName>zes_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\zes_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>zes_sns.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\zes_sns.c</FilePath>
+            </File>
+            <File>
+              <FileName>zes_sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\zes_sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>zes_sys.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\src\zes_sys.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1153,6 +1213,11 @@
               <FileName>battery.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\battery.c</FilePath>
+            </File>
+            <File>
+              <FileName>ble_sam.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\ble_sam.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1213,6 +1278,11 @@
               <FileName>ble_debug_assert_handler.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\..\lib\nrf51822\Source\ble\ble_debug_assert_handler.c</FilePath>
+            </File>
+            <File>
+              <FileName>nrf_delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib\nrf51822\Source\nrf_delay\nrf_delay.c</FilePath>
             </File>
           </Files>
         </Group>

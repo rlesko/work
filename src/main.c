@@ -55,6 +55,8 @@
 #include "ble_bas.h"
 #include "battery.h"
 
+#include "ble_sam.h"
+
 #define IS_SRVC_CHANGED_CHARACT_PRESENT 0                                           /**< Include or not the service_changed characteristic. if not enabled, the server's database cannot be changed for the lifetime of the device*/
 
 #define WAKEUP_BUTTON_PIN               BUTTON_0                                    /**< Button used to wake up the application. */
@@ -72,10 +74,12 @@
 
 // YOUR_JOB: Modify these according to requirements.
 #define APP_TIMER_PRESCALER             0                                           /**< Value of the RTC1 PRESCALER register. */
-#define APP_TIMER_MAX_TIMERS            3                                           /**< Maximum number of simultaneously created timers. */
+#define APP_TIMER_MAX_TIMERS            4                                           /**< Maximum number of simultaneously created timers. */
 #define APP_TIMER_OP_QUEUE_SIZE         4                                           /**< Size of timer operation queues. */
 
 #define BATTERY_LEVEL_MEAS_INTERVAL     APP_TIMER_TICKS(2000, APP_TIMER_PRESCALER)  /**< Battery level measurement interval (ticks). */
+
+#define ACCEL_MEAS_INTERVAL             APP_TIMER_TICKS(2000, APP_TIMER_PRESCALER)  /**< Battery level measurement interval (ticks). */
 
 #define MIN_CONN_INTERVAL               MSEC_TO_UNITS(500, UNIT_1_25_MS)            /**< Minimum acceptable connection interval (0.5 seconds). */
 #define MAX_CONN_INTERVAL               MSEC_TO_UNITS(1000, UNIT_1_25_MS)           /**< Maximum acceptable connection interval (1 second). */
@@ -102,7 +106,9 @@
 static ble_gap_sec_params_t             m_sec_params;                               /**< Security requirements for this application. */
 static uint16_t                         m_conn_handle = BLE_CONN_HANDLE_INVALID;    /**< Handle of the current connection. */
 ble_bas_t                               bas;
+ble_sam_t                               sam;
 static app_timer_id_t                   m_battery_timer_id;
+static app_timer_id_t                   m_accel_timer_id;
 static zes_spi_t                        zes_Spi0;
 static zes_lis3dsh_t                    zes_Lis3dsh;
 
@@ -194,6 +200,14 @@ static void battery_level_meas_timeout_handler(void * p_context)
     battery_start();
 }
 
+static void accel_meas_timeout_handler(void * p_context)
+{
+    UNUSED_PARAMETER(p_context);
+	
+	  zes_lis3dsh_data(&zes_Lis3dsh, NULL);
+	
+	  ble_sam_measurement_send(&sam, &(zes_Lis3dsh.data));
+}
 
 /**@brief Function for the Timer initialization.
  *
@@ -211,6 +225,11 @@ static void timers_init(void)
                  one. */
     err_code = app_timer_create(&m_battery_timer_id, APP_TIMER_MODE_REPEATED, battery_level_meas_timeout_handler);
     APP_ERROR_CHECK(err_code); 
+	
+	  err_code = app_timer_create(&m_accel_timer_id, APP_TIMER_MODE_REPEATED, accel_meas_timeout_handler);
+    APP_ERROR_CHECK(err_code); 
+	
+	
 }
 
 
@@ -285,6 +304,7 @@ static void services_init(void)
 	
 	  uint32_t err_code;
 	  ble_bas_init_t bas_init;
+    ble_sam_init_t sam_init;
 	
 	  memset(&bas_init, 0, sizeof(bas_init));
 	  BLE_GAP_CONN_SEC_MODE_SET_OPEN(&bas_init.battery_level_char_attr_md.cccd_write_perm);
@@ -300,6 +320,9 @@ static void services_init(void)
 	
 	  err_code = ble_bas_init(&bas, &bas_init);
     APP_ERROR_CHECK(err_code);
+	
+	  err_code = ble_sam_init(&sam ,&sam_init);
+		APP_ERROR_CHECK(err_code);
 }
 
 /**@brief Function for initializing security parameters.
@@ -379,6 +402,9 @@ static void timers_start(void)
     uint32_t err_code;
 
     err_code = app_timer_start(m_battery_timer_id, BATTERY_LEVEL_MEAS_INTERVAL, NULL);
+    APP_ERROR_CHECK(err_code);
+	
+	  err_code = app_timer_start(m_accel_timer_id, ACCEL_MEAS_INTERVAL, NULL);
     APP_ERROR_CHECK(err_code);
 }
 
@@ -515,6 +541,8 @@ static void ble_evt_dispatch(ble_evt_t * p_ble_evt)
     /*
     YOUR_JOB: Add service ble_evt handlers calls here, like, for example: */
     ble_bas_on_ble_evt(&bas, p_ble_evt);
+	
+	  ble_sam_on_ble_evt(&sam, p_ble_evt);
 }
 
 
@@ -639,7 +667,7 @@ int main(void)
 	  zes_sys_pwld(true);
 		nrf_delay_ms(25);
 	
-		zes_spi_setup(&zes_Spi0, NRF_SPI0, AS_nCS, AS_MOSI, AS_MISO, AS_SCLK, zes_spi_125kbps);
+		zes_spi_setup(&zes_Spi0, NRF_SPI0, AS_nCS, AS_MOSI, AS_MISO, AS_SCLK, zes_spi_8Mbps);
 	  zes_spi_init(&zes_Spi0);
 
 	  zes_lis3dsh_setup(&zes_Lis3dsh, (zes_bus_t *)&zes_Spi0);

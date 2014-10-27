@@ -602,6 +602,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Zendo</GroupName>
+          <Files>
+            <File>
+              <FileName>zes_lis3dsh.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\zes_lis3dsh.c</FilePath>
+            </File>
+            <File>
+              <FileName>zes_lis3dsh.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\src\zes_lis3dsh.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
@@ -964,7 +979,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>NRF51 DEBUG_NRF_USER BLE_STACK_SUPPORT_REQD BOARD_NRF6310</Define>
+              <Define>NRF51 DEBUG_NRF_USER BLE_STACK_SUPPORT_REQD BOARD_NRF6310 BOARD_SAM</Define>
               <Undefine></Undefine>
               <IncludePath>..;..\inc;..\lib\nrf51822\Include;..\lib\nrf51822\Include\app_common;..\lib\nrf51822\Include\ble;..\lib\nrf51822\Include\ble\ble_services;..\lib\nrf51822\Include\s110;..\lib\nrf51822\Include\sd_common;..\lib\nrf51822\Include\boards;..\src;..\lib\nrf51822\Board;..\lib\nrf51822\Board\pca10001;..\lib\nrf51822\Board\pca10001\s110</IncludePath>
             </VariousControls>
@@ -1198,6 +1213,21 @@
               <FileName>ble_debug_assert_handler.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\..\lib\nrf51822\Source\ble\ble_debug_assert_handler.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Zendo</GroupName>
+          <Files>
+            <File>
+              <FileName>zes_lis3dsh.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\zes_lis3dsh.c</FilePath>
+            </File>
+            <File>
+              <FileName>zes_lis3dsh.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\src\zes_lis3dsh.h</FilePath>
             </File>
           </Files>
         </Group>

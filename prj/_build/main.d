@@ -64,3 +64,4 @@
 .\_build\main.o: ..\inc\lis3dsh.h
 .\_build\main.o: ..\lib\nrf51822\Include\ble\ble_services\ble_bas.h
 .\_build\main.o: ..\src\battery.h
+.\_build\main.o: ..\src\ble_sam.h

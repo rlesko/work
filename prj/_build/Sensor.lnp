@@ -8,6 +8,7 @@
 ".\_build\ble_srv_common.o"
 ".\_build\ble_bas.o"
 ".\_build\battery.o"
+".\_build\ble_sam.o"
 ".\_build\ble_error_log.o"
 ".\_build\pstorage.o"
 ".\_build\crc16.o"

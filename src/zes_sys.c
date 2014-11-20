@@ -15,6 +15,9 @@ zes_sys_init()
 {
 	nrf_gpio_pin_clear(PW_CTRL); // Disable load (same as pull-down)
 	nrf_gpio_cfg_output(PW_CTRL);
+	
+	nrf_gpio_pin_clear(BZ_EN);
+	nrf_gpio_cfg_output(BZ_EN);
 
 	return res_Ok;
 }

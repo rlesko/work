@@ -13552,21 +13552,22 @@ typedef void (*ble_sam_led_handler_t)(ble_sam_t *p, uint8_t v);
 
 typedef struct
 {
-ble_sam_evt_handler_t evt_handler;
-_Bool support_notification;
-
-
-ble_srv_cccd_security_mode_t accel_char_attr_md;
-ble_gap_conn_sec_mode_t accel_report_read_perm;
+  ble_sam_evt_handler_t          evt_handler;
+  _Bool                           support_notification;
+  ble_srv_cccd_security_mode_t   accel_char_attr_md;
+  ble_gap_conn_sec_mode_t        accel_report_read_perm;
+	ble_srv_report_ref_t *         p_report_ref;
+  
 } ble_sam_init_t;
 
 typedef struct ble_sam_s
 {
-	ble_sam_evt_handler_t evt_handler;
-	uint16_t srvc_handle;
-	ble_gatts_char_handles_t accel_char_handles;
-	uint8_t uuid_type;
-	uint16_t conn_handle;
+	ble_sam_evt_handler_t          evt_handler;
+	uint16_t                       srvc_handle;
+	ble_gatts_char_handles_t       accel_char_handles;  
+  uint16_t                       report_ref_handle;	
+	uint8_t                        uuid_type;
+	uint16_t                       conn_handle;
 } ble_sam_t;
 
 uint32_t ble_sam_init(ble_sam_t * p_sam, const ble_sam_init_t * p_sam_init);
@@ -13580,9 +13581,77 @@ uint32_t ble_sam_on_accelerometer_update(ble_sam_t * p_sam, zes_lis3dsh_d *d);
 
 #line 6 "..\\src\\ble_sam.c"
 
+
+
+
+
+ 
+static void on_connect(ble_sam_t * p_sam, ble_evt_t * p_ble_evt)
+{
+    p_sam->conn_handle = p_ble_evt->evt.gap_evt.conn_handle;
+}
+
+
+
+
+
+
+ 
+static void on_disconnect(ble_sam_t * p_sam, ble_evt_t * p_ble_evt)
+{
+    ((void)(p_ble_evt));
+    p_sam->conn_handle = 0xFFFF;
+}
+
+
+
+
+
+ 
+static void on_sam_cccd_write(ble_sam_t * p_sam, ble_gatts_evt_write_t * p_evt_write)
+{
+
+
+        
+        if (p_sam->evt_handler != 0)
+        {
+            ble_sam_evt_t evt;
+
+            if (ble_srv_is_notification_enabled(p_evt_write->data))
+            {
+                evt.evt_type = BLE_SAM_EVT_NOTIFICATION_ENABLED;
+            }
+            else
+            {
+                evt.evt_type = BLE_SAM_EVT_NOTIFICATION_DISABLED;
+            }
+
+            p_sam->evt_handler(p_sam, &evt);
+        }
+
+}
+
+
+
+
+
+ 
+static void on_write(ble_sam_t * p_sam, ble_evt_t * p_ble_evt)
+{
+    ble_gatts_evt_write_t * p_evt_write = &p_ble_evt->evt.gatts_evt.params.write;
+
+    if (p_evt_write->handle == p_sam->accel_char_handles.cccd_handle)
+    {
+        on_sam_cccd_write(p_sam, p_evt_write);
+    }
+}
+
+
 static uint32_t 
 accel_char_add(ble_sam_t * p_sam, const ble_sam_init_t * p_sam_init)
 {
+	  uint32_t ec;
+	
 	  ble_gatts_char_md_t chm;
 		ble_gatts_attr_md_t ccm;
 	  ble_gatts_attr_t acv;
@@ -13596,7 +13665,8 @@ accel_char_add(ble_sam_t * p_sam, const ble_sam_init_t * p_sam_init)
 	
 		memset(&ccm, 0, sizeof(* &ccm));
 	  do {(&ccm . read_perm)->sm = 1; (&ccm . read_perm)->lv = 1;} while(0);
-	  do {(&ccm . write_perm)->sm = 1; (&ccm . write_perm)->lv = 1;} while(0);
+	  ccm.write_perm = p_sam_init->accel_char_attr_md.cccd_write_perm;
+	  
 	  ccm.vloc = 0x01;
 	
 		memset(&chm, 0, sizeof(* &chm));
@@ -13612,10 +13682,10 @@ accel_char_add(ble_sam_t * p_sam, const ble_sam_init_t * p_sam_init)
 		id.uuid = 0x1524;
 	
 	  memset(&atm, 0, sizeof(* &atm));
+		atm.read_perm = p_sam_init->accel_char_attr_md.read_perm;
+		atm.write_perm = p_sam_init->accel_char_attr_md.write_perm;
 
 
-	  do {(&atm . read_perm)->sm = 1; (&atm . read_perm)->lv = 1;} while(0);
-	  do {(&atm . write_perm)->sm = 0; (&atm . write_perm)->lv = 0;} while(0);
 		atm.vloc = 0x01;
 		atm.rd_auth = 0;
 		atm.wr_auth = 0;
@@ -13624,15 +13694,40 @@ accel_char_add(ble_sam_t * p_sam, const ble_sam_init_t * p_sam_init)
 	  memset(&acv, 0, sizeof(* &acv));
 		acv.p_uuid = &id;
 		acv.p_attr_md = &atm;
-		acv.init_len = sizeof(zes_lis3dsh_d);
-		acv.max_len = sizeof(zes_lis3dsh_d);
+		acv.init_len = 0x0C; 
+		acv.max_len = 0x0C; 
 		acv.init_offs = 0;
 		acv.p_value = 0;
-
-
-
 	
-	  return sd_ble_gatts_characteristic_add(p_sam->srvc_handle, &chm, &acv, &p_sam->accel_char_handles);
+	  ec = sd_ble_gatts_characteristic_add(p_sam->srvc_handle, &chm, &acv, &p_sam->accel_char_handles);
+		
+		if (ec !=  ((0x0) + 0))
+			return ec;
+		
+		do { id . type = 0x01; id . uuid = 0x2908;} while(0);
+		
+		memset(&atm, 0, sizeof(* &atm));
+		atm.read_perm = p_sam_init->accel_report_read_perm;
+		do {(&atm . write_perm)->sm = 0; (&atm . write_perm)->lv = 0;} while(0);
+		
+		atm.vloc = 0x01;
+		atm.rd_auth = 0;
+		atm.wr_auth = 0;
+		atm.vlen = 0;
+		
+		memset(&acv, 0, sizeof(* &acv));
+		acv.p_uuid = &id;
+		acv.p_attr_md = &atm;
+		acv.init_len = 12;
+		acv.max_len = 12;
+		acv.init_offs = 0;
+		acv.p_value = 0;
+		
+		
+	  if (ec !=  ((0x0) + 0))
+			return ec;
+		
+		return ((0x0) + 0);
 }
 
 uint32_t ble_sam_init(ble_sam_t * p_sam, const ble_sam_init_t * p_sam_init)
@@ -13646,6 +13741,7 @@ uint32_t ble_sam_init(ble_sam_t * p_sam, const ble_sam_init_t * p_sam_init)
 	  if ( ec != ((0x0) + 0))
 			return ec;
 	
+		p_sam->evt_handler = p_sam_init->evt_handler;
 	  p_sam->conn_handle = 0xFFFF;
 	  
 	  id.type = p_sam->uuid_type;
@@ -13655,11 +13751,7 @@ uint32_t ble_sam_init(ble_sam_t * p_sam, const ble_sam_init_t * p_sam_init)
 	 	if (ec != ((0x0) + 0))
 		  return ec;
 	
-		ec = accel_char_add(p_sam, p_sam_init);
-	  if (ec != ((0x0) + 0))
-		  return ec;
-    
-		return ((0x0) + 0);
+		return accel_char_add(p_sam, p_sam_init);
 }
 
 uint32_t ble_sam_measurement_send(ble_sam_t * p_sam, zes_lis3dsh_d * data)
@@ -13670,8 +13762,10 @@ uint32_t ble_sam_measurement_send(ble_sam_t * p_sam, zes_lis3dsh_d * data)
 			  uint16_t hvx_len = sizeof(zes_lis3dsh_d);
 			  ble_gatts_hvx_params_t hvx_params;
 			
+			  memset(&hvx_params, 0, sizeof(* &hvx_params));
 			  hvx_params.handle = p_sam->accel_char_handles.value_handle;
 			  hvx_params.type = 0x01;
+			  hvx_params.offset = 0;
 			  hvx_params.p_len  = &hvx_len;
         hvx_params.p_data = (uint8_t *)data;
 			
@@ -13692,7 +13786,24 @@ uint32_t ble_sam_measurement_send(ble_sam_t * p_sam, zes_lis3dsh_d * data)
 
 void ble_sam_on_ble_evt(ble_sam_t * p_sam, ble_evt_t * p_ble_evt)
 {
-	
+	      switch (p_ble_evt->header.evt_id)
+    {
+        case BLE_GAP_EVT_CONNECTED:
+            on_connect(p_sam, p_ble_evt);
+            break;
+
+        case BLE_GAP_EVT_DISCONNECTED:
+            on_disconnect(p_sam, p_ble_evt);
+            break;
+				
+				case BLE_GATTS_EVT_WRITE:
+            on_write(p_sam, p_ble_evt);
+            break;
+				        
+				default:
+            
+            break;
+    }
 }
 
 uint32_t ble_sam_on_accelerometer_update(ble_sam_t * p_sam, zes_lis3dsh_d *d)
@@ -13703,10 +13814,17 @@ uint32_t ble_sam_on_accelerometer_update(ble_sam_t * p_sam, zes_lis3dsh_d *d)
 	  zes_lis3dsh_d data;
 	  len = sizeof(zes_lis3dsh_d);
 	
-	  data.x_G = 0xFF;
-	  data.y_G = 0xFF;
-	  data.z_G = 0xFF;
+	  data.x_G = 1.0;
+	  data.y_G = 1.0;
+	  data.z_G = 1.0;
 	
+	  ec = sd_ble_gatts_value_set(p_sam->accel_char_handles.value_handle, 0, &len, (uint8_t*)&data);
+	
+	  if (ec != ((0x0) + 0))
+    {
+        return ec;
+    } 
+		
 	  memset(&hvx_params, 0, sizeof(* &hvx_params));
 	  hvx_params.handle = p_sam->accel_char_handles.value_handle;
 	  hvx_params.type = 0x01;
@@ -13715,4 +13833,6 @@ uint32_t ble_sam_on_accelerometer_update(ble_sam_t * p_sam, zes_lis3dsh_d *d)
 	  hvx_params.p_data = (uint8_t *)&data;
 	
 	  ec = sd_ble_gatts_hvx(p_sam->conn_handle, &hvx_params);
+		
+		return ((0x0) + 0);
 }

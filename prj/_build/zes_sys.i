@@ -10167,6 +10167,9 @@ zes_sys_init()
 {
 	nrf_gpio_pin_clear(9); 
 	nrf_gpio_cfg_output(9);
+	
+	nrf_gpio_pin_clear(10);
+	nrf_gpio_cfg_output(10);
 
 	return res_Ok;
 }

@@ -27,21 +27,22 @@ typedef void (*ble_sam_led_handler_t)(ble_sam_t *p, uint8_t v);
 
 typedef struct
 {
-ble_sam_evt_handler_t evt_handler;
-bool support_notification;
-//ble_report_ref_t * p_report_ref;
-//uint8_t initial_batt_level;
-ble_srv_cccd_security_mode_t accel_char_attr_md;
-ble_gap_conn_sec_mode_t accel_report_read_perm;
+  ble_sam_evt_handler_t          evt_handler;
+  bool                           support_notification;
+  ble_srv_cccd_security_mode_t   accel_char_attr_md;
+  ble_gap_conn_sec_mode_t        accel_report_read_perm;
+	ble_srv_report_ref_t *         p_report_ref;
+  //uint8_t initial_batt_level;
 } ble_sam_init_t;
 
 typedef struct ble_sam_s
 {
-	ble_sam_evt_handler_t evt_handler;
-	uint16_t srvc_handle;
-	ble_gatts_char_handles_t accel_char_handles;
-	uint8_t uuid_type;
-	uint16_t conn_handle;
+	ble_sam_evt_handler_t          evt_handler;
+	uint16_t                       srvc_handle;
+	ble_gatts_char_handles_t       accel_char_handles;  
+  uint16_t                       report_ref_handle;	
+	uint8_t                        uuid_type;
+	uint16_t                       conn_handle;
 } ble_sam_t;
 
 uint32_t ble_sam_init(ble_sam_t * p_sam, const ble_sam_init_t * p_sam_init);

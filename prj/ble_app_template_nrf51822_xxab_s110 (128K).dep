@@ -1,527 +1,527 @@
 Dependencies for Project 'ble_app_template', Target 'nrf51822_xxab_s110 (128K)': (DO NOT MODIFY !)
-F (RTE\Device\nRF51822_xxAA\arm_startup_nrf51.s)(0x53FCB04E)()
-F (RTE\Device\nRF51822_xxAA\system_nrf51.c)(0x53FCB04E)()
-F (RTE\Device\nRF51822_xxAB\arm_startup_nrf51.s)(0x53FCB04E)(--cpu Cortex-M0 --li -g --apcs=interwork -I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include--list .\_build\arm_startup_nrf51.lst --xref -o .\_build\arm_startup_nrf51.o --depend .\_build\arm_startup_nrf51.d)
-F (RTE\Device\nRF51822_xxAB\system_nrf51.c)(0x53FCB04E)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\system_nrf51.o --omf_browse .\_build\system_nrf51.crf --depend .\_build\system_nrf51.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-F (.\..\src\main.c)(0x544EB98F)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\main.o --omf_browse .\_build\main.crf --depend .\_build\main.d)
-I (..\src\zes.h)(0x54355724)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\inc\board.h)(0x54355724)
-I (..\inc\sam_pin.h)(0x54355724)
-I (..\src\zes_res.h)(0x54355724)
-I (..\src\zes_def.h)(0x54355724)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nordic_common.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\ble.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_hci.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\ble\ble_advdata.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\ble\ble_conn_params.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\boards.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\boards/nrf6310.h)(0x54355724)
-I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\sd_common\softdevice_handler.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346E304)
-I (..\lib\nrf51822\Include\s110\nrf_sdm.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x5364992C)
-I (..\lib\nrf51822\Include\s110\nrf_error_sdm.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\sd_common\ble_stack_handler_types.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\sd_common\ant_stack_handler_types.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_timer.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346E304)
-I (..\lib\nrf51822\Include\ble\ble_error_log.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\ble\ble_flash.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_gpiote.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_button.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\ble\ble_debug_assert_handler.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\pstorage.h)(0x5400DF8C)
-I (..\src\pstorage_platform.h)(0x54355724)
-I (..\src\zes_sys.h)(0x54355724)
-I (..\src\zes_spi.h)(0x54355724)
-I (..\src\zes_bus.h)(0x54355724)
-I (..\src\zes_lis3dsh.h)(0x54452B4C)
-I (..\src\zes_sns.h)(0x54355724)
-I (..\inc\lis3dsh.h)(0x54358002)
-I (..\lib\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5400DF8C)
-I (..\src\battery.h)(0x54355724)
-I (..\src\ble_sam.h)(0x544EAB58)
-F (..\src\zes_sns.h)(0x54355724)()
-F (..\src\zes_spi.c)(0x543845C4)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\zes_spi.o --omf_browse .\_build\zes_spi.crf --depend .\_build\zes_spi.d)
-I (..\src\zes_spi.h)(0x54355724)
-I (..\src\zes.h)(0x54355724)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\inc\board.h)(0x54355724)
-I (..\inc\sam_pin.h)(0x54355724)
-I (..\src\zes_res.h)(0x54355724)
-I (..\src\zes_def.h)(0x54355724)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\src\zes_bus.h)(0x54355724)
-I (..\lib\nrf51822\Include\nrf_delay.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400DF8C)
-F (..\src\zes_sns.c)(0x543C1875)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\zes_sns.o --omf_browse .\_build\zes_sns.crf --depend .\_build\zes_sns.d)
-I (..\src\zes_sns.h)(0x54355724)
-I (..\src\zes.h)(0x54355724)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\inc\board.h)(0x54355724)
-I (..\inc\sam_pin.h)(0x54355724)
-I (..\src\zes_res.h)(0x54355724)
-I (..\src\zes_def.h)(0x54355724)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\src\zes_bus.h)(0x54355724)
-F (..\src\zes_sys.c)(0x54355724)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\zes_sys.o --omf_browse .\_build\zes_sys.crf --depend .\_build\zes_sys.d)
-I (..\src\zes_sys.h)(0x54355724)
-I (..\src\zes.h)(0x54355724)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\inc\board.h)(0x54355724)
-I (..\inc\sam_pin.h)(0x54355724)
-I (..\src\zes_res.h)(0x54355724)
-I (..\src\zes_def.h)(0x54355724)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400DF8C)
-F (..\src\zes_sys.h)(0x54355724)()
-F (.\..\lib\nrf51822\Source\ble\ble_services\ble_srv_common.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_srv_common.o --omf_browse .\_build\ble_srv_common.crf --depend .\_build\ble_srv_common.d)
-I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A19E06)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nordic_common.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-F (..\lib\nrf51822\Source\ble\ble_services\ble_bas.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_bas.o --omf_browse .\_build\ble_bas.crf --depend .\_build\ble_bas.d)
-I (..\lib\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\s110\ble.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nordic_common.h)(0x5400DF8C)
-F (..\src\battery.c)(0x5447F494)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\battery.o --omf_browse .\_build\battery.crf --depend .\_build\battery.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nordic_common.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\sd_common\softdevice_handler.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346E304)
-I (..\lib\nrf51822\Include\s110\nrf_sdm.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x5364992C)
-I (..\lib\nrf51822\Include\s110\nrf_error_sdm.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\sd_common\ble_stack_handler_types.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\ble.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\sd_common\ant_stack_handler_types.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400DF8C)
-I (..\src\main.h)(0x54355724)
-I (..\src\battery.h)(0x54355724)
-F (..\src\ble_sam.c)(0x544EA61F)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_sam.o --omf_browse .\_build\ble_sam.crf --depend .\_build\ble_sam.d)
-I (..\lib\nrf51822\Include\nordic_common.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\src\ble_sam.h)(0x544EAB58)
-I (..\lib\nrf51822\Include\s110\ble.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400DF8C)
-I (..\src\zes_lis3dsh.h)(0x54452B4C)
-I (..\src\zes.h)(0x54355724)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\inc\board.h)(0x54355724)
-I (..\inc\sam_pin.h)(0x54355724)
-I (..\src\zes_res.h)(0x54355724)
-I (..\src\zes_def.h)(0x54355724)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\src\zes_sns.h)(0x54355724)
-I (..\src\zes_bus.h)(0x54355724)
-I (..\inc\lis3dsh.h)(0x54358002)
-F (.\..\lib\nrf51822\Source\ble\ble_error_log.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_error_log.o --omf_browse .\_build\ble_error_log.crf --depend .\_build\ble_error_log.d)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\ble\ble_error_log.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\ble\ble_flash.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\app_common\pstorage.h)(0x5400DF8C)
-I (..\src\pstorage_platform.h)(0x54355724)
-F (.\..\lib\nrf51822\Source\app_common\pstorage.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\pstorage.o --omf_browse .\_build\pstorage.crf --depend .\_build\pstorage.d)
-I (..\lib\nrf51822\Include\app_common\pstorage.h)(0x5400DF8C)
-I (..\src\pstorage_platform.h)(0x54355724)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nordic_common.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\nrf_assert.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A19E06)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x5364992C)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-F (.\..\lib\nrf51822\Source\app_common\crc16.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\crc16.o --omf_browse .\_build\crc16.crf --depend .\_build\crc16.d)
-I (..\lib\nrf51822\Include\app_common\crc16.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346E304)
-F (.\..\lib\nrf51822\Source\ble\ble_advdata.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_advdata.o --omf_browse .\_build\ble_advdata.crf --depend .\_build\ble_advdata.d)
-I (..\lib\nrf51822\Include\ble\ble_advdata.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\lib\nrf51822\Include\s110\ble.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nordic_common.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400DF8C)
-F (.\..\lib\nrf51822\Source\app_common\app_scheduler.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\app_scheduler.o --omf_browse .\_build\app_scheduler.crf --depend .\_build\app_scheduler.d)
-I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x5364992C)
-I (..\lib\nrf51822\Include\nrf_assert.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\sd_common\app_util_platform.h)(0x5400DF8C)
-F (.\..\lib\nrf51822\Source\app_common\app_timer.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\app_timer.o --omf_browse .\_build\app_timer.crf --depend .\_build\app_timer.d)
-I (..\lib\nrf51822\Include\app_common\app_timer.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346E304)
-I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x5364992C)
-I (..\lib\nrf51822\Include\nrf_delay.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\sd_common\app_util_platform.h)(0x5400DF8C)
-F (.\..\lib\nrf51822\Source\ble\ble_conn_params.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_conn_params.o --omf_browse .\_build\ble_conn_params.crf --depend .\_build\ble_conn_params.d)
-I (..\lib\nrf51822\Include\ble\ble_conn_params.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (..\lib\nrf51822\Include\s110\ble.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nordic_common.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\ble_hci.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\app_common\app_timer.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346E304)
-I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400DF8C)
-F (.\..\lib\nrf51822\Source\sd_common\softdevice_handler.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\softdevice_handler.o --omf_browse .\_build\softdevice_handler.crf --depend .\_build\softdevice_handler.d)
-I (..\lib\nrf51822\Include\sd_common\softdevice_handler.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nordic_common.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\nrf_sdm.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A19E06)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x5364992C)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\s110\nrf_error_sdm.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\sd_common\ble_stack_handler_types.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\ble.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A19E06)
-I (..\lib\nrf51822\Include\sd_common\ant_stack_handler_types.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\nrf_assert.h)(0x5400DF8C)
-F (.\..\lib\nrf51822\Source\app_common\app_button.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\app_button.o --omf_browse .\_build\app_button.crf --depend .\_build\app_button.d)
-I (..\lib\nrf51822\Include\app_common\app_button.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nordic_common.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_gpiote.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_timer.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346E304)
-F (.\..\lib\nrf51822\Source\app_common\app_gpiote.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\app_gpiote.o --omf_browse .\_build\app_gpiote.crf --depend .\_build\app_gpiote.d)
-I (..\lib\nrf51822\Include\app_common\app_gpiote.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\lib\nrf51822\Include\sd_common\app_util_platform.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400DF8C)
-F (.\..\lib\nrf51822\Source\ble\ble_debug_assert_handler.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_debug_assert_handler.o --omf_browse .\_build\ble_debug_assert_handler.crf --depend .\_build\ble_debug_assert_handler.d)
-I (..\lib\nrf51822\Include\ble\ble_debug_assert_handler.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\ble\ble_error_log.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\lib\nrf51822\Include\ble\ble_flash.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\nordic_common.h)(0x5400DF8C)
-F (..\lib\nrf51822\Source\nrf_delay\nrf_delay.c)(0x5400DF8C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\nrf_delay.o --omf_browse .\_build\nrf_delay.crf --depend .\_build\nrf_delay.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346E304)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf_delay.h)(0x5400DF8C)
-F (..\src\zes_lis3dsh.c)(0x54493EAE)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\zes_lis3dsh.o --omf_browse .\_build\zes_lis3dsh.crf --depend .\_build\zes_lis3dsh.d)
-I (..\src\zes_lis3dsh.h)(0x54452B4C)
-I (..\src\zes.h)(0x54355724)
-I (..\lib\nrf51822\Include\nrf.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369336C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346E304)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
-I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400DFAC)
-I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400DFAC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346E304)
-I (..\inc\board.h)(0x54355724)
-I (..\inc\sam_pin.h)(0x54355724)
-I (..\src\zes_res.h)(0x54355724)
-I (..\src\zes_def.h)(0x54355724)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346E304)
-I (..\src\zes_sns.h)(0x54355724)
-I (..\src\zes_bus.h)(0x54355724)
-I (..\inc\lis3dsh.h)(0x54358002)
-I (..\lib\nrf51822\Include\nrf_delay.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\spi_master.h)(0x5400DF8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346E304)
-I (..\lib\nrf51822\Include\sd_common\app_util_platform.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400DF8C)
-I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CB4D4)
-F (..\src\zes_lis3dsh.h)(0x54452B4C)()
+F (RTE\Device\nRF51822_xxAA\arm_startup_nrf51.s)(0x53FCA23E)()
+F (RTE\Device\nRF51822_xxAA\system_nrf51.c)(0x53FCA23E)()
+F (RTE\Device\nRF51822_xxAB\arm_startup_nrf51.s)(0x53FCA23E)(--cpu Cortex-M0 --li -g --apcs=interwork -I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include--list .\_build\arm_startup_nrf51.lst --xref -o .\_build\arm_startup_nrf51.o --depend .\_build\arm_startup_nrf51.d)
+F (RTE\Device\nRF51822_xxAB\system_nrf51.c)(0x53FCA23E)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\system_nrf51.o --omf_browse .\_build\system_nrf51.crf --depend .\_build\system_nrf51.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+F (.\..\src\main.c)(0x546D008C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\main.o --omf_browse .\_build\main.crf --depend .\_build\main.d)
+I (..\src\zes.h)(0x54354914)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\inc\board.h)(0x54354914)
+I (..\inc\sam_pin.h)(0x54354914)
+I (..\src\zes_res.h)(0x54354914)
+I (..\src\zes_def.h)(0x54354914)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nordic_common.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\ble.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_hci.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\ble\ble_advdata.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\ble\ble_conn_params.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\boards.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\boards/nrf6310.h)(0x54354914)
+I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\sd_common\softdevice_handler.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\s110\nrf_sdm.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x53648B1C)
+I (..\lib\nrf51822\Include\s110\nrf_error_sdm.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\sd_common\ble_stack_handler_types.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\sd_common\ant_stack_handler_types.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_timer.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\ble\ble_error_log.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\ble\ble_flash.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_gpiote.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_button.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\ble\ble_debug_assert_handler.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\pstorage.h)(0x5400D17C)
+I (..\src\pstorage_platform.h)(0x54354914)
+I (..\src\zes_sys.h)(0x54354914)
+I (..\src\zes_spi.h)(0x54354914)
+I (..\src\zes_bus.h)(0x54354914)
+I (..\src\zes_lis3dsh.h)(0x54451D3C)
+I (..\src\zes_sns.h)(0x54354914)
+I (..\inc\lis3dsh.h)(0x543571F2)
+I (..\lib\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5400D17C)
+I (..\src\battery.h)(0x54354914)
+I (..\src\ble_sam.h)(0x54511F3E)
+F (..\src\zes_sns.h)(0x54354914)()
+F (..\src\zes_spi.c)(0x543837B4)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\zes_spi.o --omf_browse .\_build\zes_spi.crf --depend .\_build\zes_spi.d)
+I (..\src\zes_spi.h)(0x54354914)
+I (..\src\zes.h)(0x54354914)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\inc\board.h)(0x54354914)
+I (..\inc\sam_pin.h)(0x54354914)
+I (..\src\zes_res.h)(0x54354914)
+I (..\src\zes_def.h)(0x54354914)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\src\zes_bus.h)(0x54354914)
+I (..\lib\nrf51822\Include\nrf_delay.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400D17C)
+F (..\src\zes_sns.c)(0x543C0A65)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\zes_sns.o --omf_browse .\_build\zes_sns.crf --depend .\_build\zes_sns.d)
+I (..\src\zes_sns.h)(0x54354914)
+I (..\src\zes.h)(0x54354914)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\inc\board.h)(0x54354914)
+I (..\inc\sam_pin.h)(0x54354914)
+I (..\src\zes_res.h)(0x54354914)
+I (..\src\zes_def.h)(0x54354914)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\src\zes_bus.h)(0x54354914)
+F (..\src\zes_sys.c)(0x546CFFD4)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\zes_sys.o --omf_browse .\_build\zes_sys.crf --depend .\_build\zes_sys.d)
+I (..\src\zes_sys.h)(0x54354914)
+I (..\src\zes.h)(0x54354914)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\inc\board.h)(0x54354914)
+I (..\inc\sam_pin.h)(0x54354914)
+I (..\src\zes_res.h)(0x54354914)
+I (..\src\zes_def.h)(0x54354914)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400D17C)
+F (..\src\zes_sys.h)(0x54354914)()
+F (.\..\lib\nrf51822\Source\ble\ble_services\ble_srv_common.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_srv_common.o --omf_browse .\_build\ble_srv_common.crf --depend .\_build\ble_srv_common.d)
+I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A18FF6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nordic_common.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+F (..\lib\nrf51822\Source\ble\ble_services\ble_bas.c)(0x5457EDCE)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_bas.o --omf_browse .\_build\ble_bas.crf --depend .\_build\ble_bas.d)
+I (..\lib\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\s110\ble.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nordic_common.h)(0x5400D17C)
+F (..\src\battery.c)(0x5447E684)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\battery.o --omf_browse .\_build\battery.crf --depend .\_build\battery.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nordic_common.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\sd_common\softdevice_handler.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\s110\nrf_sdm.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x53648B1C)
+I (..\lib\nrf51822\Include\s110\nrf_error_sdm.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\sd_common\ble_stack_handler_types.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\ble.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\sd_common\ant_stack_handler_types.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400D17C)
+I (..\src\main.h)(0x54354914)
+I (..\src\battery.h)(0x54354914)
+F (..\src\ble_sam.c)(0x5457ED9A)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_sam.o --omf_browse .\_build\ble_sam.crf --depend .\_build\ble_sam.d)
+I (..\lib\nrf51822\Include\nordic_common.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\src\ble_sam.h)(0x54511F3E)
+I (..\lib\nrf51822\Include\s110\ble.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400D17C)
+I (..\src\zes_lis3dsh.h)(0x54451D3C)
+I (..\src\zes.h)(0x54354914)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\inc\board.h)(0x54354914)
+I (..\inc\sam_pin.h)(0x54354914)
+I (..\src\zes_res.h)(0x54354914)
+I (..\src\zes_def.h)(0x54354914)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\src\zes_sns.h)(0x54354914)
+I (..\src\zes_bus.h)(0x54354914)
+I (..\inc\lis3dsh.h)(0x543571F2)
+F (.\..\lib\nrf51822\Source\ble\ble_error_log.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_error_log.o --omf_browse .\_build\ble_error_log.crf --depend .\_build\ble_error_log.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\ble\ble_error_log.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\ble\ble_flash.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\app_common\pstorage.h)(0x5400D17C)
+I (..\src\pstorage_platform.h)(0x54354914)
+F (.\..\lib\nrf51822\Source\app_common\pstorage.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\pstorage.o --omf_browse .\_build\pstorage.crf --depend .\_build\pstorage.d)
+I (..\lib\nrf51822\Include\app_common\pstorage.h)(0x5400D17C)
+I (..\src\pstorage_platform.h)(0x54354914)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nordic_common.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\nrf_assert.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A18FF6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x53648B1C)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+F (.\..\lib\nrf51822\Source\app_common\crc16.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\crc16.o --omf_browse .\_build\crc16.crf --depend .\_build\crc16.d)
+I (..\lib\nrf51822\Include\app_common\crc16.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346D4F4)
+F (.\..\lib\nrf51822\Source\ble\ble_advdata.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_advdata.o --omf_browse .\_build\ble_advdata.crf --depend .\_build\ble_advdata.d)
+I (..\lib\nrf51822\Include\ble\ble_advdata.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\s110\ble.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nordic_common.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400D17C)
+F (.\..\lib\nrf51822\Source\app_common\app_scheduler.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\app_scheduler.o --omf_browse .\_build\app_scheduler.crf --depend .\_build\app_scheduler.d)
+I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x53648B1C)
+I (..\lib\nrf51822\Include\nrf_assert.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\sd_common\app_util_platform.h)(0x5400D17C)
+F (.\..\lib\nrf51822\Source\app_common\app_timer.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\app_timer.o --omf_browse .\_build\app_timer.crf --depend .\_build\app_timer.d)
+I (..\lib\nrf51822\Include\app_common\app_timer.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x53648B1C)
+I (..\lib\nrf51822\Include\nrf_delay.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\sd_common\app_util_platform.h)(0x5400D17C)
+F (.\..\lib\nrf51822\Source\ble\ble_conn_params.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_conn_params.o --omf_browse .\_build\ble_conn_params.crf --depend .\_build\ble_conn_params.d)
+I (..\lib\nrf51822\Include\ble\ble_conn_params.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\s110\ble.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nordic_common.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\ble_hci.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\app_common\app_timer.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400D17C)
+F (.\..\lib\nrf51822\Source\sd_common\softdevice_handler.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\softdevice_handler.o --omf_browse .\_build\softdevice_handler.crf --depend .\_build\softdevice_handler.d)
+I (..\lib\nrf51822\Include\sd_common\softdevice_handler.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nordic_common.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\nrf_sdm.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\nrf_svc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\s110\nrf_soc.h)(0x53A18FF6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\s110\nrf_error_soc.h)(0x53648B1C)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\s110\nrf_error_sdm.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\sd_common\ble_stack_handler_types.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\ble.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_ranges.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_types.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_l2cap.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_err.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gatt.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gattc.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\s110\ble_gatts.h)(0x53A18FF6)
+I (..\lib\nrf51822\Include\sd_common\ant_stack_handler_types.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\nrf_assert.h)(0x5400D17C)
+F (.\..\lib\nrf51822\Source\app_common\app_button.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\app_button.o --omf_browse .\_build\app_button.crf --depend .\_build\app_button.d)
+I (..\lib\nrf51822\Include\app_common\app_button.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\app_common\app_scheduler.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nordic_common.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_gpiote.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_timer.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346D4F4)
+F (.\..\lib\nrf51822\Source\app_common\app_gpiote.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\app_gpiote.o --omf_browse .\_build\app_gpiote.crf --depend .\_build\app_gpiote.d)
+I (..\lib\nrf51822\Include\app_common\app_gpiote.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+I (..\lib\nrf51822\Include\app_common\app_util.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\sd_common\app_util_platform.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\nrf_gpio.h)(0x5400D17C)
+F (.\..\lib\nrf51822\Source\ble\ble_debug_assert_handler.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\ble_debug_assert_handler.o --omf_browse .\_build\ble_debug_assert_handler.crf --depend .\_build\ble_debug_assert_handler.d)
+I (..\lib\nrf51822\Include\ble\ble_debug_assert_handler.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\ble\ble_error_log.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\ble\ble_flash.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\nordic_common.h)(0x5400D17C)
+F (..\lib\nrf51822\Source\nrf_delay\nrf_delay.c)(0x5400D17C)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\nrf_delay.o --omf_browse .\_build\nrf_delay.crf --depend .\_build\nrf_delay.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf_delay.h)(0x5400D17C)
+F (..\src\zes_lis3dsh.c)(0x5449309E)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.. -I..\inc -I..\lib\nrf51822\Include -I..\lib\nrf51822\Include\app_common -I..\lib\nrf51822\Include\ble -I..\lib\nrf51822\Include\ble\ble_services -I..\lib\nrf51822\Include\s110 -I..\lib\nrf51822\Include\sd_common -I..\lib\nrf51822\Include\boards -I..\src -I..\lib\nrf51822\Board -I..\lib\nrf51822\Board\pca10001 -I..\lib\nrf51822\Board\pca10001\s110-I C:\Users\Ryan\Desktop\sensor\prj\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-D_RTE_ -DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -DBOARD_SAM-o .\_build\zes_lis3dsh.o --omf_browse .\_build\zes_lis3dsh.crf --depend .\_build\zes_lis3dsh.d)
+I (..\src\zes_lis3dsh.h)(0x54451D3C)
+I (..\src\zes.h)(0x54354914)
+I (..\lib\nrf51822\Include\nrf.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0.h)(0x5369255C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5346D4F4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x53034B90)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x53034B90)
+I (..\lib\nrf51822\Include\system_nrf51.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_bitfields.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\nrf51_deprecated.h)(0x5400D19C)
+I (..\lib\nrf51822\Include\compiler_abstraction.h)(0x5400D19C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5346D4F4)
+I (..\inc\board.h)(0x54354914)
+I (..\inc\sam_pin.h)(0x54354914)
+I (..\src\zes_res.h)(0x54354914)
+I (..\src\zes_def.h)(0x54354914)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5346D4F4)
+I (..\src\zes_sns.h)(0x54354914)
+I (..\src\zes_bus.h)(0x54354914)
+I (..\inc\lis3dsh.h)(0x543571F2)
+I (..\lib\nrf51822\Include\nrf_delay.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\spi_master.h)(0x5400D17C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5346D4F4)
+I (..\lib\nrf51822\Include\sd_common\app_util_platform.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\app_common\app_error.h)(0x5400D17C)
+I (..\lib\nrf51822\Include\s110\nrf_error.h)(0x529CA6C4)
+F (..\src\zes_lis3dsh.h)(0x54451D3C)()

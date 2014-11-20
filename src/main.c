@@ -55,6 +55,7 @@
 #include "ble_bas.h"
 #include "battery.h"
 
+
 #include "ble_sam.h"
 
 #define IS_SRVC_CHANGED_CHARACT_PRESENT 0                                           /**< Include or not the service_changed characteristic. if not enabled, the server's database cannot be changed for the lifetime of the device*/
@@ -202,11 +203,24 @@ static void battery_level_meas_timeout_handler(void * p_context)
 
 static void accel_meas_timeout_handler(void * p_context)
 {
+	  uint32_t ec;
+	  static int i = 0;
     UNUSED_PARAMETER(p_context);
+	
+	  if ( i == 0) {
+	    nrf_gpio_pin_set(CONNECTED_LED_PIN_NO);
+			i++;
+		}
+		else if ( i == 1) {
+			nrf_gpio_pin_clear(CONNECTED_LED_PIN_NO);
+			i--;
+		}
 	
 	  zes_lis3dsh_data(&zes_Lis3dsh, NULL);
 	
 	  ble_sam_measurement_send(&sam, &(zes_Lis3dsh.data));
+		
+//		ec = ble_sam_on_accelerometer_update(&sam, &(zes_Lis3dsh.data));
 }
 
 /**@brief Function for the Timer initialization.
@@ -226,8 +240,8 @@ static void timers_init(void)
     err_code = app_timer_create(&m_battery_timer_id, APP_TIMER_MODE_REPEATED, battery_level_meas_timeout_handler);
     APP_ERROR_CHECK(err_code); 
 	
-	  err_code = app_timer_create(&m_accel_timer_id, APP_TIMER_MODE_REPEATED, accel_meas_timeout_handler);
-    APP_ERROR_CHECK(err_code); 
+//	  err_code = app_timer_create(&m_accel_timer_id, APP_TIMER_MODE_REPEATED, accel_meas_timeout_handler);
+//    APP_ERROR_CHECK(err_code); 
 	
 	
 }
@@ -252,7 +266,7 @@ static void gap_params_init(void)
     APP_ERROR_CHECK(err_code);
 
     /* YOUR_JOB: Use an appearance value matching the application's use case.*/
-    err_code = sd_ble_gap_appearance_set(BLE_APPEARANCE_GENERIC_THERMOMETER);
+    err_code = sd_ble_gap_appearance_set(BLE_APPEARANCE_GENERIC_HID);
     APP_ERROR_CHECK(err_code); 
 
     memset(&gap_conn_params, 0, sizeof(gap_conn_params));
@@ -279,12 +293,17 @@ static void advertising_init(void)
     uint8_t       flags = BLE_GAP_ADV_FLAGS_LE_ONLY_LIMITED_DISC_MODE;
 
     // YOUR_JOB: Use UUIDs for service(s) used in your application.
-    ble_uuid_t adv_uuids[] = {{BLE_UUID_BATTERY_SERVICE, BLE_UUID_TYPE_BLE}};
+    ble_uuid_t adv_uuids[] = 
+	  {
+		     {BLE_UUID_BATTERY_SERVICE, BLE_UUID_TYPE_BLE}
+				 //{ZES_UUID_ACCEL_SERVICE, BLE_UUID_TYPE_VENDOR_BEGIN}
+		};
 
     // Build and set advertising data
     memset(&advdata, 0, sizeof(advdata));
 
-    advdata.name_type               = BLE_ADVDATA_FULL_NAME;
+    advdata.name_type               = BLE_ADVDATA_SHORT_NAME;//BLE_ADVDATA_FULL_NAME;
+		advdata.short_name_len          = 4;
     advdata.include_appearance      = true;
     advdata.flags.size              = sizeof(flags);
     advdata.flags.p_data            = &flags;
@@ -307,21 +326,33 @@ static void services_init(void)
     ble_sam_init_t sam_init;
 	
 	  memset(&bas_init, 0, sizeof(bas_init));
+	
+	  // Here the sec level for the Battery Service can be changed/increased.
 	  BLE_GAP_CONN_SEC_MODE_SET_OPEN(&bas_init.battery_level_char_attr_md.cccd_write_perm);
     BLE_GAP_CONN_SEC_MODE_SET_OPEN(&bas_init.battery_level_char_attr_md.read_perm);
     BLE_GAP_CONN_SEC_MODE_SET_NO_ACCESS(&bas_init.battery_level_char_attr_md.write_perm);
 	
 	  BLE_GAP_CONN_SEC_MODE_SET_OPEN(&bas_init.battery_level_report_read_perm);
 	
-	  bas_init.evt_handler          = NULL;
+		bas_init.evt_handler          = NULL;
     bas_init.support_notification = true;
     bas_init.p_report_ref         = NULL;
     bas_init.initial_batt_level   = 100;
 	
-	  err_code = ble_bas_init(&bas, &bas_init);
+		err_code = ble_bas_init(&bas, &bas_init);
     APP_ERROR_CHECK(err_code);
 	
-	  err_code = ble_sam_init(&sam ,&sam_init);
+	  // Here the sec level for the SAM Service can be changed/increased.
+    BLE_GAP_CONN_SEC_MODE_SET_OPEN(&sam_init.accel_char_attr_md.cccd_write_perm);
+		BLE_GAP_CONN_SEC_MODE_SET_OPEN(&sam_init.accel_char_attr_md.read_perm);
+    //BLE_GAP_CONN_SEC_MODE_SET_NO_ACCESS(&sam_init.accel_char_attr_md.read_perm);
+    BLE_GAP_CONN_SEC_MODE_SET_NO_ACCESS(&sam_init.accel_char_attr_md.write_perm);
+		
+	  sam_init.evt_handler          = NULL;
+    sam_init.support_notification = true;
+    sam_init.p_report_ref         = NULL;
+		
+		err_code = ble_sam_init(&sam ,&sam_init);
 		APP_ERROR_CHECK(err_code);
 }
 
@@ -384,9 +415,9 @@ static void conn_params_init(void)
     cp_init.first_conn_params_update_delay = FIRST_CONN_PARAMS_UPDATE_DELAY;
     cp_init.next_conn_params_update_delay  = NEXT_CONN_PARAMS_UPDATE_DELAY;
     cp_init.max_conn_params_update_count   = MAX_CONN_PARAMS_UPDATE_COUNT;
-    cp_init.start_on_notify_cccd_handle    = BLE_GATT_HANDLE_INVALID;
-    cp_init.disconnect_on_fail             = false;
-    cp_init.evt_handler                    = on_conn_params_evt;
+    cp_init.start_on_notify_cccd_handle    = sam.accel_char_handles.cccd_handle;
+    cp_init.disconnect_on_fail             = true;
+    cp_init.evt_handler                    = NULL;
     cp_init.error_handler                  = conn_params_error_handler;
 
     err_code = ble_conn_params_init(&cp_init);
@@ -664,6 +695,8 @@ int main(void)
 {
 	  zes_sys_init();
 	
+		
+	
 	  zes_sys_pwld(true);
 		nrf_delay_ms(25);
 	
@@ -679,7 +712,8 @@ int main(void)
     gpiote_init();
     buttons_init();
     ble_stack_init();
-    scheduler_init();    
+    scheduler_init(); 
+  
     gap_params_init();
 	  services_init();
     advertising_init();
@@ -687,8 +721,9 @@ int main(void)
     sec_params_init();
 
     // Start execution
+		advertising_start();
     timers_start();
-    advertising_start();
+
 
     // Enter main loop
     while (true)
